@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="61776" started-at="2019-10-24T14:04:06 IST" finished-at="2019-10-24T14:05:08 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="61776" started-at="2019-10-24T14:04:06 IST" finished-at="2019-10-24T14:05:08 IST">
+      <class name="cart_popup">
+        <test-method status="PASS" signature="browser()[pri:0, instance:cart_popup@76b10754]" name="browser" is-config="true" duration-ms="23280" started-at="2019-10-24T14:04:06 IST" finished-at="2019-10-24T14:04:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="add_cart_popup()[pri:4, instance:cart_popup@76b10754]" name="add_cart_popup" duration-ms="9959" started-at="2019-10-24T14:04:29 IST" finished-at="2019-10-24T14:04:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add_cart_popup -->
+        <test-method status="PASS" signature="open_nonempty_cart_popup()[pri:5, instance:cart_popup@76b10754]" name="open_nonempty_cart_popup" duration-ms="3460" started-at="2019-10-24T14:04:39 IST" finished-at="2019-10-24T14:04:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_nonempty_cart_popup -->
+        <test-method status="PASS" signature="validate_products_in_cart_popup()[pri:6, instance:cart_popup@76b10754]" name="validate_products_in_cart_popup" duration-ms="3237" started-at="2019-10-24T14:04:43 IST" finished-at="2019-10-24T14:04:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_products_in_cart_popup -->
+        <test-method status="PASS" signature="validate_products_amount_in_cart_popup()[pri:7, instance:cart_popup@76b10754]" name="validate_products_amount_in_cart_popup" duration-ms="3321" started-at="2019-10-24T14:04:46 IST" finished-at="2019-10-24T14:04:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_products_amount_in_cart_popup -->
+        <test-method status="PASS" signature="update_product_quantity_in_cart_popup()[pri:8, instance:cart_popup@76b10754]" name="update_product_quantity_in_cart_popup" duration-ms="17576" started-at="2019-10-24T14:04:49 IST" finished-at="2019-10-24T14:05:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_product_quantity_in_cart_popup -->
+        <test-method status="PASS" signature="close()[pri:0, instance:cart_popup@76b10754]" name="close" is-config="true" duration-ms="832" started-at="2019-10-24T14:05:07 IST" finished-at="2019-10-24T14:05:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- cart_popup -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
