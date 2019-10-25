@@ -140,7 +140,7 @@ public class cart_popup extends repo_base {
 		List<WebElement> list = ele.findElements(By.tagName("li"));
 		String parent = driver.getWindowHandle();
 		for (int i = 0; i < list.size(); i++) {
-			
+			System.out.println("hello");
 		}
 	}
 	
