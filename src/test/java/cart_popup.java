@@ -1,4 +1,5 @@
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.util.*;
 
@@ -50,6 +51,7 @@ public class cart_popup extends repo_base {
 
 		click_element(By.xpath("//button[@id='product-addtocart-button']"));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@data-ui-id='message-success']")));
+		Thread.sleep(5000);
 		int update_cart_item = Integer
 				.parseInt(driver.findElement(By.xpath("//a[@class='action showcart']/span/b")).getText());
 		// System.out.println(update_cart_item);
@@ -105,6 +107,7 @@ public class cart_popup extends repo_base {
 		System.out.println(item);
 		Thread.sleep(3000);
 		assertEquals(item, total_price);
+
 	}
 
 	@Test(priority = 8)
@@ -113,7 +116,6 @@ public class cart_popup extends repo_base {
 		String qnty = "5";
 		WebElement ele = driver.findElement(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"));
 		List<WebElement> list = ele.findElements(By.tagName("li"));
-		String[] expectedmessage = { "Cart has been updated successfully." };
 		for (int i = 0; i < list.size(); i++) {
 
 			String product_name = list.get(i).findElement(By.xpath("//div[@class='product-item-details']/strong/a"))
@@ -133,19 +135,71 @@ public class cart_popup extends repo_base {
 			}
 		}
 	}
-	
-	@Test(priority = 9)
+
+	@Test(priority = 10)
 	public void delete_product_from_cart_popup() throws Exception {
+		String name = "Tshirts For Boys Combo Of 3";
+		String expmessage = "Are you sure you would like to remove this item from the shopping cart?";
 		WebElement ele = driver.findElement(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"));
 		List<WebElement> list = ele.findElements(By.tagName("li"));
-		String parent = driver.getWindowHandle();
+		int list_size = list.size();
 		for (int i = 0; i < list.size(); i++) {
-			System.out.println("hellosharma");
-			System.out.println("hellosharma");
-			
+			String product_name = list.get(i).findElement(By.xpath("//div[@class='product-item-details']/strong/a"))
+					.getText();
+			if (product_name.equalsIgnoreCase(name)) {
+				list.get(i).findElement(By.xpath("//a[@class='action delete']")).click();
+				wait.until(
+						ExpectedConditions.visibilityOfElementLocated(By.xpath("//aside[contains(@class,'_show')]")));
+				WebElement popup = driver.findElement(
+						By.xpath("//aside[contains(@class,'_show')]//div[contains(@class,'modal-inner-wrap')]"));
+				List<WebElement> list1 = popup.findElements(By.tagName("div"));
+				System.out.println(list1.size());
+				String a = list1.get(i).getText();
+				assertEquals(a, expmessage);
+				List<WebElement> modellist = popup.findElements(By.tagName("footer"));
+				modellist.get(0).findElement(By.xpath("//button[contains(@class,'action-primary action-accept')]"))
+						.click();
+				Thread.sleep(9000);
+				System.out.println(modellist.size());
+				boolean exist = driver.findElements(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"))
+						.size() != 0;
+				if (exist) {
+					WebElement ele2 = driver
+							.findElement(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"));
+					list = ele2.findElements(By.tagName("li"));
+					int updatesize = list.size();
+					assertTrue(updatesize < list_size);
+				}
+			}
+		}
+	}
+
+	@Test(priority = 9)
+	public void view_shopping_cart() throws Exception {
+		Thread.sleep(200);
+		boolean exist = driver.findElements(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"))
+				.size() != 0;
+		if (exist) {
+			driver.findElement(By.xpath("//a[contains(@class,'action viewcart')]")).click();
+			String title = driver.getTitle();
+			assertEquals(title, "Shopping Cart");
+			driver.navigate().back();
 		}
 	}
 	
+	@Test(priority = 11)
+	public void proceed_to_checkout() throws Exception {
+		boolean exist = driver.findElements(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"))
+				.size() != 0;
+		if (!exist) {
+			click_element(By.xpath("//div[@class='minicart-wrapper']"));
+			Thread.sleep(500);
+		}
+		driver.findElement(By.xpath("//button[@id='top-cart-btn-checkout']")).click();
+		String title = driver.getTitle();
+		assertEquals(title, "Checkout");
+		driver.navigate().back();
+	}
 	@AfterClass
 	public void close() {
 		driver.quit();
