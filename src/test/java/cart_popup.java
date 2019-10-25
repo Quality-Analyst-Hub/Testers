@@ -141,6 +141,8 @@ public class cart_popup extends repo_base {
 		String parent = driver.getWindowHandle();
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println("hellosharma");
+			System.out.println("hellosharma");
+			
 		}
 	}
 	
