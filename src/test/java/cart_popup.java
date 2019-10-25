@@ -198,7 +198,7 @@ public class cart_popup extends repo_base {
 		driver.findElement(By.xpath("//button[@id='top-cart-btn-checkout']")).click();
 		String title = driver.getTitle();
 		assertEquals(title, "Checkout");
-		driver.navigate().back();
+		driver.navigate().back();	
 		
 	}
 	@AfterClass
