@@ -199,6 +199,7 @@ public class cart_popup extends repo_base {
 		String title = driver.getTitle();
 		assertEquals(title, "Checkout");
 		driver.navigate().back();
+		
 	}
 	@AfterClass
 	public void close() {
