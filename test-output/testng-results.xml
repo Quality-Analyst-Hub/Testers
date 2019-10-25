@@ -1,37 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61776" started-at="2019-10-24T14:04:06 IST" finished-at="2019-10-24T14:05:08 IST">
+  <suite name="Default suite" duration-ms="112684" started-at="2019-10-25T12:55:34 IST" finished-at="2019-10-25T12:57:26 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61776" started-at="2019-10-24T14:04:06 IST" finished-at="2019-10-24T14:05:08 IST">
+    <test name="Default test" duration-ms="112684" started-at="2019-10-25T12:55:34 IST" finished-at="2019-10-25T12:57:26 IST">
       <class name="cart_popup">
-        <test-method status="PASS" signature="browser()[pri:0, instance:cart_popup@76b10754]" name="browser" is-config="true" duration-ms="23280" started-at="2019-10-24T14:04:06 IST" finished-at="2019-10-24T14:04:29 IST">
+        <test-method status="PASS" signature="browser()[pri:0, instance:cart_popup@76b10754]" name="browser" is-config="true" duration-ms="22575" started-at="2019-10-25T12:55:34 IST" finished-at="2019-10-25T12:55:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="add_cart_popup()[pri:4, instance:cart_popup@76b10754]" name="add_cart_popup" duration-ms="9959" started-at="2019-10-24T14:04:29 IST" finished-at="2019-10-24T14:04:39 IST">
+        <test-method status="PASS" signature="add_cart_popup()[pri:4, instance:cart_popup@76b10754]" name="add_cart_popup" duration-ms="15728" started-at="2019-10-25T12:55:56 IST" finished-at="2019-10-25T12:56:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_cart_popup -->
-        <test-method status="PASS" signature="open_nonempty_cart_popup()[pri:5, instance:cart_popup@76b10754]" name="open_nonempty_cart_popup" duration-ms="3460" started-at="2019-10-24T14:04:39 IST" finished-at="2019-10-24T14:04:43 IST">
+        <test-method status="PASS" signature="open_nonempty_cart_popup()[pri:5, instance:cart_popup@76b10754]" name="open_nonempty_cart_popup" duration-ms="3494" started-at="2019-10-25T12:56:12 IST" finished-at="2019-10-25T12:56:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_nonempty_cart_popup -->
-        <test-method status="PASS" signature="validate_products_in_cart_popup()[pri:6, instance:cart_popup@76b10754]" name="validate_products_in_cart_popup" duration-ms="3237" started-at="2019-10-24T14:04:43 IST" finished-at="2019-10-24T14:04:46 IST">
+        <test-method status="PASS" signature="validate_products_in_cart_popup()[pri:6, instance:cart_popup@76b10754]" name="validate_products_in_cart_popup" duration-ms="3187" started-at="2019-10-25T12:56:16 IST" finished-at="2019-10-25T12:56:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_products_in_cart_popup -->
-        <test-method status="PASS" signature="validate_products_amount_in_cart_popup()[pri:7, instance:cart_popup@76b10754]" name="validate_products_amount_in_cart_popup" duration-ms="3321" started-at="2019-10-24T14:04:46 IST" finished-at="2019-10-24T14:04:49 IST">
+        <test-method status="PASS" signature="validate_products_amount_in_cart_popup()[pri:7, instance:cart_popup@76b10754]" name="validate_products_amount_in_cart_popup" duration-ms="3361" started-at="2019-10-25T12:56:19 IST" finished-at="2019-10-25T12:56:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_products_amount_in_cart_popup -->
-        <test-method status="PASS" signature="update_product_quantity_in_cart_popup()[pri:8, instance:cart_popup@76b10754]" name="update_product_quantity_in_cart_popup" duration-ms="17576" started-at="2019-10-24T14:04:49 IST" finished-at="2019-10-24T14:05:07 IST">
+        <test-method status="PASS" signature="update_product_quantity_in_cart_popup()[pri:8, instance:cart_popup@76b10754]" name="update_product_quantity_in_cart_popup" duration-ms="17734" started-at="2019-10-25T12:56:22 IST" finished-at="2019-10-25T12:56:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- update_product_quantity_in_cart_popup -->
-        <test-method status="PASS" signature="close()[pri:0, instance:cart_popup@76b10754]" name="close" is-config="true" duration-ms="832" started-at="2019-10-24T14:05:07 IST" finished-at="2019-10-24T14:05:08 IST">
+        <test-method status="PASS" signature="proceed_to_checkout()[pri:9, instance:cart_popup@76b10754]" name="proceed_to_checkout" duration-ms="25277" started-at="2019-10-25T12:56:40 IST" finished-at="2019-10-25T12:57:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceed_to_checkout -->
+        <test-method status="FAIL" signature="delete_product_from_cart_popup()[pri:10, instance:cart_popup@76b10754]" name="delete_product_from_cart_popup" duration-ms="20244" started-at="2019-10-25T12:57:05 IST" finished-at="2019-10-25T12:57:25 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='minicart-items-wrapper overflowed']/ol"}
+  (Session info: chrome=78.0.3904.70)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:51113}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2cc865d3ffc94dc69430c99ed55d6b69
+*** Element info: {Using=xpath, value=//div[@class='minicart-items-wrapper overflowed']/ol}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='minicart-items-wrapper overflowed']/ol"}
+  (Session info: chrome=78.0.3904.70)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.70, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:51113}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2cc865d3ffc94dc69430c99ed55d6b69
+*** Element info: {Using=xpath, value=//div[@class='minicart-items-wrapper overflowed']/ol}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at cart_popup.delete_product_from_cart_popup(cart_popup.java:143)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_product_from_cart_popup -->
+        <test-method status="PASS" signature="close()[pri:0, instance:cart_popup@76b10754]" name="close" is-config="true" duration-ms="854" started-at="2019-10-25T12:57:25 IST" finished-at="2019-10-25T12:57:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

@@ -6,7 +6,7 @@
       <class name="cart_popup">
         <methods>
           <include name="browser"/>
-          <include name="update_product_quantity_in_cart_popup"/>
+          <include name="delete_product_from_cart_popup"/>
           <include name="close"/>
         </methods>
       </class> <!-- cart_popup -->
