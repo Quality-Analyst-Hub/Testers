@@ -3,22 +3,17 @@ import code_repo.repo_base;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class Login_script extends repo_base {
 	
-	// Open Browser
-	@BeforeSuite
-	public void initialize() {
-		open_browser(ph.browsername, ph.URL );
-		click_element(ph.login);
-	}
-	
 	// check validation When email id and password is blank.
 	@Test(priority=1, description = "test case with blank data")
 	public void Blank_data() throws Exception {
+		click_element(ph.login);
 		String[] expectedmessage = { "This is a required field.", "This is a required field." };
 		click_element(ph.signin);
 		assertmultivalidate(ph.err,expectedmessage);
@@ -103,12 +98,6 @@ public class Login_script extends repo_base {
 		click_element(ph.signin);
 		Thread.sleep(1000);
 		validate(expectedmessage);
-	}
-	
-	// Close Browser
-	@AfterSuite
-	public void close() {
-		driver.close();
 	}
 
 }

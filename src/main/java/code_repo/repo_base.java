@@ -427,12 +427,16 @@ public class repo_base {
 		
 	}
 	
-	public static void open_links(WebElement ele, String parent_window) throws Exception {
+	public static void open_links(WebElement ele, String parent_window, WebElement element1) throws Exception {
 		int count1 = ele.findElements(By.tagName("a")).size();
+		Actions a = new Actions(driver);
+		
 				System.out.println(count1);
 				for (int j = 0; j < count1; j++) {
 					ele.findElements(By.tagName("a")).get(j).sendKeys(Keys.CONTROL, Keys.ENTER);
 					String title = get_handelwindow_focus(parent_window);
+					a.moveToElement(element1).build().perform();
+					Thread.sleep(700);
 					System.out.println(title);
 				}
 		}

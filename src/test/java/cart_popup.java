@@ -7,58 +7,47 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
 import code_repo.repo_base;
 
 public class cart_popup extends repo_base {
 
-	@BeforeClass
-	public void browser() {
-		open_browser(ph.browsername, "http://senskids.mag2.demo321.com/test/tshirts-for-boys-combo-of-3.html");
+	
+	
+	@Test(priority = 1)
+	public void open_empty_cart_popup() throws Exception {
+		click_element(By.xpath("//div[@class='minicart-wrapper']"));
+		String display = driver.findElement(By.xpath(
+				"//div[@class='ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog']"))
+				.getCssValue("display");
+		assertEquals(display, "block");
+		Thread.sleep(3000);
 	}
 
-	/*
-	 * @Test(priority = 1) public void open_empty_cart_popup() throws Exception {
-	 * click_element(By.xpath("//div[@class='minicart-wrapper']")); String display =
-	 * driver.findElement(By.xpath(
-	 * "//div[@class='ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog']"
-	 * )) .getCssValue("display"); assertEquals(display, "block");
-	 * Thread.sleep(3000); }
-	 * 
-	 * @Test(priority = 2) public void validate_empty_cart_popup() throws Exception
-	 * { String[] expectedmessage = { "You have no items in your shopping cart." };
-	 * By pass = By.xpath(
-	 * "//div[@id='minicart-content-wrapper']/div[@class='block-content']/strong");
-	 * System.out.println(pass); assertmultivalidate(pass, expectedmessage); }
-	 * 
-	 * @Test(priority = 3) public void close_cart_popup() throws Exception {
-	 * click_element(By.xpath("//button[@id='btn-minicart-close']"));
-	 * Thread.sleep(2000); String display = driver.findElement(By.xpath(
-	 * "//div[@class='ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog']"
-	 * )) .getCssValue("display"); assertEquals(display, "none"); }
-	 */
+	@Test(priority = 2)
+	public void validate_empty_cart_popup() throws Exception {
+		String[] expectedmessage = { "You have no items in your shopping cart." };
+		boolean exist = driver.findElements(By.xpath("//div[@id='minicart-content-wrapper']/div[@class='block-content']/strong"))
+				.size() != 0;
+		if (exist) {
+		By pass = By.xpath("//div[@id='minicart-content-wrapper']/div[@class='block-content']/strong");
+		assertmultivalidate(pass, expectedmessage);
+		}
+	}
+
+	@Test(priority = 3)
+	public void close_cart_popup() throws Exception {
+		click_element(By.xpath("//button[@id='btn-minicart-close']"));
+		Thread.sleep(2000);
+		String display = driver.findElement(By.xpath(
+				"//div[@class='ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog']"))
+				.getCssValue("display");
+		assertEquals(display, "none");
+	}
+	 
 	@Test(priority = 4)
-	public void add_cart_popup() throws Exception {
-		Thread.sleep(5000);
-		int cart_item = Integer
-				.parseInt(driver.findElement(By.xpath("//a[@class='action showcart']/span/b")).getText());
-		// System.out.println(cart_item);
-		click_element(By.xpath("//button[@id='product-addtocart-button']"));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@data-ui-id='message-success']")));
-
-		click_element(By.xpath("//button[@id='product-addtocart-button']"));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@data-ui-id='message-success']")));
-		Thread.sleep(5000);
-		int update_cart_item = Integer
-				.parseInt(driver.findElement(By.xpath("//a[@class='action showcart']/span/b")).getText());
-		// System.out.println(update_cart_item);
-		Assert.assertTrue(update_cart_item > cart_item);
-	}
-
-	@Test(priority = 5)
 	public void open_nonempty_cart_popup() throws Exception {
 		click_element(By.xpath("//div[@class='minicart-wrapper']"));
 		String display = driver.findElement(By.xpath(
@@ -68,7 +57,7 @@ public class cart_popup extends repo_base {
 		Thread.sleep(3000);
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 5)
 	public void validate_products_in_cart_popup() throws Exception {
 		WebElement ele = driver.findElement(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"));
 		List<WebElement> list = ele.findElements(By.tagName("li"));
@@ -82,7 +71,7 @@ public class cart_popup extends repo_base {
 		assertEquals(item, size);
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 6)
 	public void validate_products_amount_in_cart_popup() throws Exception {
 		WebElement ele = driver.findElement(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"));
 		List<WebElement> list = ele.findElements(By.tagName("li"));
@@ -110,7 +99,7 @@ public class cart_popup extends repo_base {
 
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 7)
 	public void update_product_quantity_in_cart_popup() throws Exception {
 		String name = "Tshirts For Boys Combo Of 3";
 		String qnty = "5";
@@ -135,11 +124,30 @@ public class cart_popup extends repo_base {
 			}
 		}
 	}
-
-	@Test(priority = 10)
+	
+	@Test(priority = 8)
+	public void view_shopping_cart() throws Exception {
+		Thread.sleep(200);
+		boolean exist = driver.findElements(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"))
+				.size() != 0;
+		if (exist) {
+			driver.findElement(By.xpath("//a[contains(@class,'action viewcart')]")).click();
+			String title = driver.getTitle();
+			assertEquals(title, "Shopping Cart");
+			driver.navigate().back();
+		}
+	}
+	
+	@Test(priority = 9)
 	public void delete_product_from_cart_popup() throws Exception {
 		String name = "Tshirts For Boys Combo Of 3";
 		String expmessage = "Are you sure you would like to remove this item from the shopping cart?";
+		boolean exist = driver.findElements(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"))
+				.size() != 0;
+		if(!exist) {
+			click_element(By.xpath("//div[@class='minicart-wrapper']"));
+			Thread.sleep(500);
+		}
 		WebElement ele = driver.findElement(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"));
 		List<WebElement> list = ele.findElements(By.tagName("li"));
 		int list_size = list.size();
@@ -161,8 +169,6 @@ public class cart_popup extends repo_base {
 						.click();
 				Thread.sleep(9000);
 				System.out.println(modellist.size());
-				boolean exist = driver.findElements(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"))
-						.size() != 0;
 				if (exist) {
 					WebElement ele2 = driver
 							.findElement(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"));
@@ -174,21 +180,9 @@ public class cart_popup extends repo_base {
 		}
 	}
 
-	@Test(priority = 9)
-	public void view_shopping_cart() throws Exception {
-		Thread.sleep(200);
-		boolean exist = driver.findElements(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"))
-				.size() != 0;
-		if (exist) {
-			driver.findElement(By.xpath("//a[contains(@class,'action viewcart')]")).click();
-			String title = driver.getTitle();
-			assertEquals(title, "Shopping Cart");
-			driver.navigate().back();
-		}
-	}
-	
-	@Test(priority = 11)
+	/*@Test(priority = 10)
 	public void proceed_to_checkout() throws Exception {
+		Thread.sleep(3000);
 		boolean exist = driver.findElements(By.xpath("//div[@class='minicart-items-wrapper overflowed']/ol"))
 				.size() != 0;
 		if (!exist) {
@@ -200,8 +194,9 @@ public class cart_popup extends repo_base {
 		assertEquals(title, "Checkout");
 		driver.navigate().back();	
 		
-	}
-	@AfterClass
+	}*/
+	
+	@AfterSuite
 	public void close() {
 		driver.quit();
 	}

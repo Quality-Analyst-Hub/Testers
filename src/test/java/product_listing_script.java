@@ -14,16 +14,11 @@ public class product_listing_script extends repo_base{
 	ArrayList arr = new ArrayList();
 	ArrayList product_price = new ArrayList();
 	
-	
-	@BeforeClass
-	public void initialize() throws Exception {
-		open_browser(ph.browsername, ph.URL );
-		Thread.sleep(1000);
-		click_element(ph.product_open);
-	}
-	
 	@Test(priority=1, description = "test case for sort product list")
 	public void sort_data() throws Exception {
+		
+		Thread.sleep(1000);
+		click_element(ph.product_open);
 		String sortBy = "Price - High To Low";
 		Thread.sleep(500);
 		ArrayList Final_product_price = new ArrayList();
@@ -52,6 +47,7 @@ public class product_listing_script extends repo_base{
 		else if(sortBy.contains("High To Low")) {
 			sorting_validate(Final_product_price, "decending");	
 		}
+		
 		
 	}
 

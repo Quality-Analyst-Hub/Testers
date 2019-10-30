@@ -60,6 +60,7 @@ public class path {
 	public By sort_by = By.xpath("//select[@id='sorter']");
 
 	// product details.
+	public By product_code = By.xpath("//a[contains(text(),'tshirts for girls combo of 4')]");
 	public By product_pincode = By.xpath("//input[@placeholder='Enter Your Pincode']");
 	public By quantity_minus = By.xpath("//a[@class='increased change-qtys minus-price']");
 	public By quantity_plus = By.xpath("//a[@class='increase decrease change-qtys plus-price']");

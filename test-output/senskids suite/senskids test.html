@@ -1,0 +1,259 @@
+<html>
+<head>
+<title>TestNG:  senskids test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>senskids test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 30 15:22:06 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>662 seconds (662665 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Login_script.Blank_data()'><b>Blank_data</b><br>Test class: Login_script<br>Test method: test case with blank data</td>
+<td></td>
+<td>8</td>
+<td>Login_script@3bd94634</td></tr>
+<tr>
+<td title='Login_script.Invalid_username_and_blank_password()'><b>Invalid_username_and_blank_password</b><br>Test class: Login_script<br>Test method: test case with Invalid username and blank password</td>
+<td></td>
+<td>0</td>
+<td>Login_script@3bd94634</td></tr>
+<tr>
+<td title='signup_script.Phone_no()'><b>Phone_no</b><br>Test class: signup_script<br>Test method: test case with blank data</td>
+<td></td>
+<td>1</td>
+<td>signup_script@f4168b8</td></tr>
+<tr>
+<td title='product_details_script.add_product()'><b>add_product</b><br>Test class: product_details_script</td>
+<td></td>
+<td>6</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='Login_script.blank_username_and_valid_password()'><b>blank_username_and_valid_password</b><br>Test class: Login_script<br>Test method: test case with blank username and valid password</td>
+<td></td>
+<td>0</td>
+<td>Login_script@3bd94634</td></tr>
+<tr>
+<td title='signup_script.confirm_password()'><b>confirm_password</b><br>Test class: signup_script<br>Test method: test case for confirm password details.</td>
+<td></td>
+<td>1</td>
+<td>signup_script@f4168b8</td></tr>
+<tr>
+<td title='home_page_script.container()'><b>container</b><br>Test class: home_page_script<br>Test method: Home-page_script/Container</td>
+<td></td>
+<td>6</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='signup_script.fax_no()'><b>fax_no</b><br>Test class: signup_script<br>Test method: test case for Fax No details.</td>
+<td></td>
+<td>1</td>
+<td>signup_script@f4168b8</td></tr>
+<tr>
+<td title='home_page_script.footer()'><b>footer</b><br>Test class: home_page_script<br>Test method: Home-page_script/footer</td>
+<td></td>
+<td>117</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='home_page_script.head_menu()'><b>head_menu</b><br>Test class: home_page_script<br>Test method: Home-page_script/head_menu</td>
+<td></td>
+<td>175</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='product_details_script.insert_qyt()'><b>insert_qyt</b><br>Test class: product_details_script</td>
+<td></td>
+<td>4</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='signup_script.invalid_email()'><b>invalid_email</b><br>Test class: signup_script<br>Test method: test case with invalid email details.</td>
+<td></td>
+<td>1</td>
+<td>signup_script@f4168b8</td></tr>
+<tr>
+<td title='Login_script.invalid_email_forget_password()'><b>invalid_email_forget_password</b><br>Test class: Login_script<br>Test method: test case with invalid email at forget password page</td>
+<td></td>
+<td>20</td>
+<td>Login_script@3bd94634</td></tr>
+<tr>
+<td title='signup_script.invalid_password()'><b>invalid_password</b><br>Test class: signup_script<br>Test method: test case with invalid password details.</td>
+<td></td>
+<td>1</td>
+<td>signup_script@f4168b8</td></tr>
+<tr>
+<td title='home_page_script.newsletter()'><b>newsletter</b><br>Test class: home_page_script<br>Test method: Home-page_script/newsletter</td>
+<td></td>
+<td>27</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='home_page_script.newsletter_with_already_registered_email()'><b>newsletter_with_already_registered_email</b><br>Test class: home_page_script<br>Test method: Home-page_script/newsletter_with_preregistered_email</td>
+<td></td>
+<td>7</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='home_page_script.newsletter_with_wrong_email()'><b>newsletter_with_wrong_email</b><br>Test class: home_page_script<br>Test method: Home-page_script/news_with_Wrong_data</td>
+<td></td>
+<td>0</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='product_details_script.open_product_details()'><b>open_product_details</b><br>Test class: product_details_script</td>
+<td></td>
+<td>8</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='product_details_script.product_add()'><b>product_add</b><br>Test class: product_details_script</td>
+<td></td>
+<td>23</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='product_details_script.product_options()'><b>product_options</b><br>Test class: product_details_script</td>
+<td></td>
+<td>20</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='signup_script.registered_email()'><b>registered_email</b><br>Test class: signup_script<br>Test method: test case for Already registered email id details.</td>
+<td></td>
+<td>11</td>
+<td>signup_script@f4168b8</td></tr>
+<tr>
+<td title='product_details_script.review()'><b>review</b><br>Test class: product_details_script</td>
+<td></td>
+<td>10</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='product_details_script.review_blank()'><b>review_blank</b><br>Test class: product_details_script</td>
+<td></td>
+<td>27</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='home_page_script.search_field()'><b>search_field</b><br>Test class: home_page_script<br>Test method: Home-page_script/search_field</td>
+<td></td>
+<td>19</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='product_listing_script.sort_data()'><b>sort_data</b><br>Test class: product_listing_script<br>Test method: test case for sort product list</td>
+<td></td>
+<td>14</td>
+<td>product_listing_script@74294adb</td></tr>
+<tr>
+<td title='product_details_script.tab_intend()'><b>tab_intend</b><br>Test class: product_details_script</td>
+<td></td>
+<td>2</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='home_page_script.top_head()'><b>top_head</b><br>Test class: home_page_script<br>Test method: Home-page_script/top_head</td>
+<td></td>
+<td>79</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='signup_script.valid_data()'><b>valid_data</b><br>Test class: signup_script<br>Test method: test case for Valid data details.</td>
+<td></td>
+<td>17</td>
+<td>signup_script@f4168b8</td></tr>
+<tr>
+<td title='Login_script.valid_username_and_blank_password()'><b>valid_username_and_blank_password</b><br>Test class: Login_script<br>Test method: test case with valid username and blank password</td>
+<td></td>
+<td>0</td>
+<td>Login_script@3bd94634</td></tr>
+<tr>
+<td title='Login_script.valid_username_and_valid_password()'><b>valid_username_and_valid_password</b><br>Test class: Login_script<br>Test method: test case with valid username and valid password</td>
+<td></td>
+<td>8</td>
+<td>Login_script@3bd94634</td></tr>
+<tr>
+<td title='Login_script.valid_username_and_wrong_password()'><b>valid_username_and_wrong_password</b><br>Test class: Login_script<br>Test method: test case with Valid username and wrong password</td>
+<td></td>
+<td>8</td>
+<td>Login_script@3bd94634</td></tr>
+<tr>
+<td title='home_page_script.validate_logo()'><b>validate_logo</b><br>Test class: home_page_script<br>Test method: Home-page_script/validate_logo</td>
+<td></td>
+<td>0</td>
+<td>home_page_script@58a90037</td></tr>
+<tr>
+<td title='product_details_script.validate_qty()'><b>validate_qty</b><br>Test class: product_details_script</td>
+<td></td>
+<td>2</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='product_details_script.wishList()'><b>wishList</b><br>Test class: product_details_script</td>
+<td></td>
+<td>17</td>
+<td>product_details_script@70a9f84e</td></tr>
+<tr>
+<td title='signup_script.with_blank_fields()'><b>with_blank_fields</b><br>Test class: signup_script<br>Test method: test case with blank data</td>
+<td></td>
+<td>1</td>
+<td>signup_script@f4168b8</td></tr>
+<tr>
+<td title='Login_script.wrong_username_and_wrong_password()'><b>wrong_username_and_wrong_password</b><br>Test class: Login_script<br>Test method: test case with Wrong username and wrong password</td>
+<td></td>
+<td>7</td>
+<td>Login_script@3bd94634</td></tr>
+</table><p>
+</body>
+</html>
