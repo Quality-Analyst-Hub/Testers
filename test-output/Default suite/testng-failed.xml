@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="home_page_script">
+      <class name="cart_mini_popup">
         <methods>
-          <include name="search_field"/>
+          <include name="delete_product_from_cart_popup"/>
+          <include name="close"/>
+          <include name="proceed_to_checkout"/>
+          <include name="update_product_quantity_in_cart_popup"/>
         </methods>
-      </class> <!-- home_page_script -->
+      </class> <!-- cart_mini_popup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

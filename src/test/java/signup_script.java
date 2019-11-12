@@ -137,7 +137,7 @@ public class signup_script extends repo_base {
 		select_data(ph.country_dropdown, "India");
 		select_data(ph.drop_down, "Rajasthan");
 		insertdata(ph.pincode, "302002");
-		insertdata(ph.email, "amitf.u.l1@mailinator.com");
+		insertdata(ph.email, "amifullstop@mailinator.com");
 		insertdata(ph.reg_pass, "amit1234@");
 		insertdata(ph.reg_cpass, "amit1234@");
 		click_element(ph.signup);

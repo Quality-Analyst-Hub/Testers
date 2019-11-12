@@ -2,11 +2,6 @@
 <suite name="senskids suite">
 	<test name="senskids test">
 		<classes>
-			<class name="signup_script" />
-			<class name="Login_script" />
-			<class name="home_page_script" />
-			<class name="product_listing_script" />
-			<class name="product_details_script" />
 			<class name="cart_mini_popup" />
 			<class name="shopping_cart" />
 		</classes>

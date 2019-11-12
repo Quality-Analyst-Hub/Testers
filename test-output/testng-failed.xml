@@ -3,16 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [senskids suite]">
   <test thread-count="5" name="senskids test(failed)">
     <classes>
-      <class name="product_details_script">
+      <class name="home_page_script">
         <methods>
-          <include name="insert_qyt"/>
-          <include name="review_blank"/>
-          <include name="product_add"/>
-          <include name="wishList"/>
-          <include name="add_product"/>
-          <include name="review"/>
+          <include name="container"/>
+          <include name="head_menu"/>
+          <include name="top_head"/>
+          <include name="validate_logo"/>
         </methods>
-      </class> <!-- product_details_script -->
+      </class> <!-- home_page_script -->
     </classes>
   </test> <!-- senskids test(failed) -->
 </suite> <!-- Failed suite [senskids suite] -->

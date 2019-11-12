@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
@@ -29,6 +30,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -46,6 +48,7 @@ public class repo_base {
 	public static JavascriptExecutor js = (JavascriptExecutor) driver;
 	public static Actions act;
 	public static WebDriverWait wait ;
+	public static Hashtable tab= new Hashtable();
 //	open browser
 	public static void open_browser(String browsername, String url) {
 		try {
@@ -110,7 +113,6 @@ public class repo_base {
 		}
 	}
 
-//	Scroll page at bottom
 	public static void scroll() {
 		try {
 			driver.findElement(By.cssSelector("body")).sendKeys(kc.page_down);
@@ -493,4 +495,38 @@ public class repo_base {
 			}
 		}
 	}
+	
+	public static String model_box_manage(String expmessage) {
+		wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("//aside[contains(@class,'_show')]")));
+		WebElement popup = driver.findElement(
+				By.xpath("//aside[contains(@class,'_show')]//div[contains(@class,'modal-inner-wrap')]"));
+		List<WebElement> list1 = popup.findElements(By.tagName("div"));
+		System.out.println(list1.size());
+		String a = list1.get(0).getText();
+		assertTrue(a.equalsIgnoreCase(expmessage));
+		
+		//clicking of buttons of model box..
+		List<WebElement> modelfooter = popup.findElements(By.tagName("footer"));
+		
+		modelfooter.get(0).findElement(By.xpath("//button[contains(@class,'action-primary action-accept')]"))
+				.click();
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).build().perform();
+		return a;
+	}
+	
+	public void hash_put(String key, String value) {
+		tab.put(key, value);
+	}
+	
+	/*public String hash_get(String key) {
+		String data= (String) tab.get(key);
+		return data;
+	}*/
+	
+	public Hashtable getdataMap() {
+        return tab;
+   }
+	
 }

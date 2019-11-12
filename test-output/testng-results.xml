@@ -1,169 +1,509 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="36" passed="36">
+<testng-results skipped="0" failed="4" ignored="0" total="51" passed="47">
   <reporter-output>
   </reporter-output>
-  <suite name="senskids suite" duration-ms="662665" started-at="2019-10-30T15:22:06 IST" finished-at="2019-10-30T15:33:09 IST">
+  <suite name="senskids suite" duration-ms="613043" started-at="2019-11-12T18:28:37 IST" finished-at="2019-11-12T18:38:50 IST">
     <groups>
     </groups>
-    <test name="senskids test" duration-ms="662665" started-at="2019-10-30T15:22:06 IST" finished-at="2019-10-30T15:33:09 IST">
+    <test name="senskids test" duration-ms="613043" started-at="2019-11-12T18:28:37 IST" finished-at="2019-11-12T18:38:50 IST">
+      <class name="shopping_cart">
+        <test-method status="PASS" signature="validate_products()[pri:1, instance:shopping_cart@32464a14]" name="validate_products" duration-ms="1280" started-at="2019-11-12T18:37:20 IST" finished-at="2019-11-12T18:37:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_products -->
+        <test-method status="PASS" signature="discount_invalid()[pri:2, instance:shopping_cart@32464a14]" name="discount_invalid" duration-ms="30845" started-at="2019-11-12T18:37:21 IST" finished-at="2019-11-12T18:37:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- discount_invalid -->
+        <test-method status="PASS" signature="discount_valid()[pri:3, instance:shopping_cart@32464a14]" name="discount_valid" duration-ms="15178" started-at="2019-11-12T18:37:52 IST" finished-at="2019-11-12T18:38:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- discount_valid -->
+        <test-method status="PASS" signature="update_cart()[pri:4, instance:shopping_cart@32464a14]" name="update_cart" duration-ms="15059" started-at="2019-11-12T18:38:07 IST" finished-at="2019-11-12T18:38:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_cart -->
+        <test-method status="PASS" signature="delete_product()[pri:5, instance:shopping_cart@32464a14]" name="delete_product" duration-ms="251" started-at="2019-11-12T18:38:22 IST" finished-at="2019-11-12T18:38:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_product -->
+        <test-method status="PASS" signature="order_total()[pri:6, instance:shopping_cart@32464a14]" name="order_total" duration-ms="6544" started-at="2019-11-12T18:38:23 IST" finished-at="2019-11-12T18:38:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- order_total -->
+        <test-method status="PASS" signature="proceed_to_checkout()[pri:7, instance:shopping_cart@32464a14]" name="proceed_to_checkout" duration-ms="20306" started-at="2019-11-12T18:38:29 IST" finished-at="2019-11-12T18:38:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceed_to_checkout -->
+        <test-method status="PASS" signature="close()[pri:0, instance:shopping_cart@32464a14]" name="close" is-config="true" duration-ms="1552" started-at="2019-11-12T18:38:50 IST" finished-at="2019-11-12T18:38:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- shopping_cart -->
       <class name="home_page_script">
-        <test-method status="PASS" signature="top_head()[pri:1, instance:home_page_script@58a90037]" name="top_head" duration-ms="79678" started-at="2019-10-30T15:23:39 IST" description="Home-page_script/top_head" finished-at="2019-10-30T15:24:59 IST">
+        <test-method status="FAIL" signature="top_head()[pri:1, instance:home_page_script@77a57272]" name="top_head" duration-ms="36729" started-at="2019-11-12T18:30:16 IST" description="Home-page_script/top_head" finished-at="2019-11-12T18:30:53 IST">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=..//..}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=..//..}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+at home_page_script.top_head(home_page_script.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- top_head -->
-        <test-method status="PASS" signature="validate_logo()[pri:2, instance:home_page_script@58a90037]" name="validate_logo" duration-ms="173" started-at="2019-10-30T15:24:59 IST" description="Home-page_script/validate_logo" finished-at="2019-10-30T15:24:59 IST">
+        <test-method status="FAIL" signature="validate_logo()[pri:2, instance:home_page_script@77a57272]" name="validate_logo" duration-ms="111" started-at="2019-11-12T18:30:53 IST" description="Home-page_script/validate_logo" finished-at="2019-11-12T18:30:53 IST">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,'header-main')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,'header-main')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+at home_page_script.validate_logo(home_page_script.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_logo -->
-        <test-method status="PASS" signature="container()[pri:3, instance:home_page_script@58a90037]" name="container" duration-ms="6211" started-at="2019-10-30T15:24:59 IST" description="Home-page_script/Container" finished-at="2019-10-30T15:25:05 IST">
+        <test-method status="FAIL" signature="container()[pri:3, instance:home_page_script@77a57272]" name="container" duration-ms="56" started-at="2019-11-12T18:30:53 IST" description="Home-page_script/Container" finished-at="2019-11-12T18:30:53 IST">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,'header-main')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,'header-main')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+at home_page_script.container(home_page_script.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- container -->
-        <test-method status="PASS" signature="head_menu()[pri:4, instance:home_page_script@58a90037]" name="head_menu" duration-ms="175072" started-at="2019-10-30T15:25:05 IST" description="Home-page_script/head_menu" finished-at="2019-10-30T15:28:00 IST">
+        <test-method status="FAIL" signature="head_menu()[pri:4, instance:home_page_script@77a57272]" name="head_menu" duration-ms="3073" started-at="2019-11-12T18:30:53 IST" description="Home-page_script/head_menu" finished-at="2019-11-12T18:30:56 IST">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,'header-menu')]/div[contains(@class,'container')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GIPL-102', ip: '192.168.10.162', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,'header-menu')]/div[contains(@class,'container')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+at home_page_script.head_menu(home_page_script.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- head_menu -->
-        <test-method status="PASS" signature="footer()[pri:5, instance:home_page_script@58a90037]" name="footer" duration-ms="117316" started-at="2019-10-30T15:28:00 IST" description="Home-page_script/footer" finished-at="2019-10-30T15:29:58 IST">
+        <test-method status="PASS" signature="footer()[pri:5, instance:home_page_script@77a57272]" name="footer" duration-ms="122578" started-at="2019-11-12T18:30:56 IST" description="Home-page_script/footer" finished-at="2019-11-12T18:32:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- footer -->
-        <test-method status="PASS" signature="newsletter_with_wrong_email()[pri:6, instance:home_page_script@58a90037]" name="newsletter_with_wrong_email" duration-ms="800" started-at="2019-10-30T15:29:58 IST" description="Home-page_script/news_with_Wrong_data" finished-at="2019-10-30T15:29:59 IST">
+        <test-method status="PASS" signature="newsletter_with_wrong_email()[pri:6, instance:home_page_script@77a57272]" name="newsletter_with_wrong_email" duration-ms="1012" started-at="2019-11-12T18:32:59 IST" description="Home-page_script/news_with_Wrong_data" finished-at="2019-11-12T18:33:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newsletter_with_wrong_email -->
-        <test-method status="PASS" signature="newsletter()[pri:7, instance:home_page_script@58a90037]" name="newsletter" duration-ms="27872" started-at="2019-10-30T15:29:59 IST" description="Home-page_script/newsletter" finished-at="2019-10-30T15:30:26 IST">
+        <test-method status="PASS" signature="newsletter()[pri:7, instance:home_page_script@77a57272]" name="newsletter" duration-ms="26537" started-at="2019-11-12T18:33:00 IST" description="Home-page_script/newsletter" finished-at="2019-11-12T18:33:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newsletter -->
-        <test-method status="PASS" signature="newsletter_with_already_registered_email()[pri:8, instance:home_page_script@58a90037]" name="newsletter_with_already_registered_email" duration-ms="7275" started-at="2019-10-30T15:30:26 IST" description="Home-page_script/newsletter_with_preregistered_email" finished-at="2019-10-30T15:30:34 IST">
+        <test-method status="PASS" signature="newsletter_with_already_registered_email()[pri:8, instance:home_page_script@77a57272]" name="newsletter_with_already_registered_email" duration-ms="7253" started-at="2019-11-12T18:33:26 IST" description="Home-page_script/newsletter_with_preregistered_email" finished-at="2019-11-12T18:33:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newsletter_with_already_registered_email -->
-        <test-method status="PASS" signature="search_field()[pri:9, instance:home_page_script@58a90037]" name="search_field" duration-ms="19032" started-at="2019-10-30T15:30:34 IST" description="Home-page_script/search_field" finished-at="2019-10-30T15:30:53 IST">
+        <test-method status="PASS" signature="search_field()[pri:9, instance:home_page_script@77a57272]" name="search_field" duration-ms="19449" started-at="2019-11-12T18:33:34 IST" description="Home-page_script/search_field" finished-at="2019-11-12T18:33:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_field -->
       </class> <!-- home_page_script -->
       <class name="product_listing_script">
-        <test-method status="PASS" signature="sort_data()[pri:1, instance:product_listing_script@74294adb]" name="sort_data" duration-ms="14140" started-at="2019-10-30T15:30:53 IST" description="test case for sort product list" finished-at="2019-10-30T15:31:07 IST">
+        <test-method status="PASS" signature="sort_data()[pri:1, instance:product_listing_script@7181ae3f]" name="sort_data" duration-ms="13679" started-at="2019-11-12T18:33:53 IST" description="test case for sort product list" finished-at="2019-11-12T18:34:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sort_data -->
       </class> <!-- product_listing_script -->
+      <class name="cart_mini_popup">
+        <test-method status="PASS" signature="open_empty_cart_popup()[pri:1, instance:cart_mini_popup@6e2c9341]" name="open_empty_cart_popup" duration-ms="2300" started-at="2019-11-12T18:35:46 IST" finished-at="2019-11-12T18:35:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open_empty_cart_popup -->
+        <test-method status="PASS" signature="validate_empty_cart_popup()[pri:2, instance:cart_mini_popup@6e2c9341]" name="validate_empty_cart_popup" duration-ms="20056" started-at="2019-11-12T18:35:48 IST" finished-at="2019-11-12T18:36:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_empty_cart_popup -->
+        <test-method status="PASS" signature="validate_products_in_cart_popup()[pri:3, instance:cart_mini_popup@6e2c9341]" name="validate_products_in_cart_popup" duration-ms="3156" started-at="2019-11-12T18:36:08 IST" finished-at="2019-11-12T18:36:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_products_in_cart_popup -->
+        <test-method status="PASS" signature="validate_products_amount_in_cart_popup()[pri:4, instance:cart_mini_popup@6e2c9341]" name="validate_products_amount_in_cart_popup" duration-ms="3454" started-at="2019-11-12T18:36:11 IST" finished-at="2019-11-12T18:36:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_products_amount_in_cart_popup -->
+        <test-method status="PASS" signature="update_product_quantity_in_cart_popup()[pri:5, instance:cart_mini_popup@6e2c9341]" name="update_product_quantity_in_cart_popup" duration-ms="9213" started-at="2019-11-12T18:36:15 IST" finished-at="2019-11-12T18:36:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- update_product_quantity_in_cart_popup -->
+        <test-method status="PASS" signature="delete_product_from_cart_popup()[pri:6, instance:cart_mini_popup@6e2c9341]" name="delete_product_from_cart_popup" duration-ms="26368" started-at="2019-11-12T18:36:24 IST" finished-at="2019-11-12T18:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete_product_from_cart_popup -->
+        <test-method status="PASS" signature="proceed_to_checkout()[pri:7, instance:cart_mini_popup@6e2c9341]" name="proceed_to_checkout" duration-ms="21288" started-at="2019-11-12T18:36:50 IST" finished-at="2019-11-12T18:37:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceed_to_checkout -->
+        <test-method status="PASS" signature="view_shopping_cart()[pri:8, instance:cart_mini_popup@6e2c9341]" name="view_shopping_cart" duration-ms="8459" started-at="2019-11-12T18:37:12 IST" finished-at="2019-11-12T18:37:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- view_shopping_cart -->
+      </class> <!-- cart_mini_popup -->
       <class name="signup_script">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:signup_script@f4168b8]" name="initialize" is-config="true" duration-ms="30399" started-at="2019-10-30T15:21:36 IST" finished-at="2019-10-30T15:22:06 IST">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:signup_script@588df31b]" name="initialize" is-config="true" duration-ms="27254" started-at="2019-11-12T18:28:09 IST" finished-at="2019-11-12T18:28:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="with_blank_fields()[pri:1, instance:signup_script@f4168b8]" name="with_blank_fields" duration-ms="1960" started-at="2019-10-30T15:22:06 IST" description="test case with blank data" finished-at="2019-10-30T15:22:08 IST">
+        <test-method status="PASS" signature="with_blank_fields()[pri:1, instance:signup_script@588df31b]" name="with_blank_fields" duration-ms="1802" started-at="2019-11-12T18:28:37 IST" description="test case with blank data" finished-at="2019-11-12T18:28:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- with_blank_fields -->
-        <test-method status="PASS" signature="Phone_no()[pri:2, instance:signup_script@f4168b8]" name="Phone_no" duration-ms="1296" started-at="2019-10-30T15:22:08 IST" description="test case with blank data" finished-at="2019-10-30T15:22:10 IST">
+        <test-method status="PASS" signature="Phone_no()[pri:2, instance:signup_script@588df31b]" name="Phone_no" duration-ms="1282" started-at="2019-11-12T18:28:38 IST" description="test case with blank data" finished-at="2019-11-12T18:28:40 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Phone_no -->
-        <test-method status="PASS" signature="invalid_email()[pri:3, instance:signup_script@f4168b8]" name="invalid_email" duration-ms="1252" started-at="2019-10-30T15:22:10 IST" description="test case with invalid email details." finished-at="2019-10-30T15:22:11 IST">
+        <test-method status="PASS" signature="invalid_email()[pri:3, instance:signup_script@588df31b]" name="invalid_email" duration-ms="1364" started-at="2019-11-12T18:28:40 IST" description="test case with invalid email details." finished-at="2019-11-12T18:28:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalid_email -->
-        <test-method status="PASS" signature="invalid_password()[pri:4, instance:signup_script@f4168b8]" name="invalid_password" duration-ms="1341" started-at="2019-10-30T15:22:11 IST" description="test case with invalid password details." finished-at="2019-10-30T15:22:12 IST">
+        <test-method status="PASS" signature="invalid_password()[pri:4, instance:signup_script@588df31b]" name="invalid_password" duration-ms="1312" started-at="2019-11-12T18:28:41 IST" description="test case with invalid password details." finished-at="2019-11-12T18:28:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalid_password -->
-        <test-method status="PASS" signature="confirm_password()[pri:5, instance:signup_script@f4168b8]" name="confirm_password" duration-ms="1746" started-at="2019-10-30T15:22:12 IST" description="test case for confirm password details." finished-at="2019-10-30T15:22:14 IST">
+        <test-method status="PASS" signature="confirm_password()[pri:5, instance:signup_script@588df31b]" name="confirm_password" duration-ms="1737" started-at="2019-11-12T18:28:42 IST" description="test case for confirm password details." finished-at="2019-11-12T18:28:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirm_password -->
-        <test-method status="PASS" signature="fax_no()[pri:6, instance:signup_script@f4168b8]" name="fax_no" duration-ms="1156" started-at="2019-10-30T15:22:14 IST" description="test case for Fax No details." finished-at="2019-10-30T15:22:15 IST">
+        <test-method status="PASS" signature="fax_no()[pri:6, instance:signup_script@588df31b]" name="fax_no" duration-ms="1253" started-at="2019-11-12T18:28:44 IST" description="test case for Fax No details." finished-at="2019-11-12T18:28:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fax_no -->
-        <test-method status="PASS" signature="registered_email()[pri:7, instance:signup_script@f4168b8]" name="registered_email" duration-ms="11371" started-at="2019-10-30T15:22:15 IST" description="test case for Already registered email id details." finished-at="2019-10-30T15:22:27 IST">
+        <test-method status="PASS" signature="registered_email()[pri:7, instance:signup_script@588df31b]" name="registered_email" duration-ms="10824" started-at="2019-11-12T18:28:45 IST" description="test case for Already registered email id details." finished-at="2019-11-12T18:28:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registered_email -->
-        <test-method status="PASS" signature="valid_data()[pri:8, instance:signup_script@f4168b8]" name="valid_data" duration-ms="17238" started-at="2019-10-30T15:22:27 IST" description="test case for Valid data details." finished-at="2019-10-30T15:22:44 IST">
+        <test-method status="PASS" signature="valid_data()[pri:8, instance:signup_script@588df31b]" name="valid_data" duration-ms="30739" started-at="2019-11-12T18:28:56 IST" description="test case for Valid data details." finished-at="2019-11-12T18:29:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- valid_data -->
       </class> <!-- signup_script -->
       <class name="product_details_script">
-        <test-method status="PASS" signature="open_product_details()[pri:1, instance:product_details_script@70a9f84e]" name="open_product_details" duration-ms="8111" started-at="2019-10-30T15:31:07 IST" finished-at="2019-10-30T15:31:15 IST">
+        <test-method status="PASS" signature="open_product_details()[pri:1, instance:product_details_script@46238e3f]" name="open_product_details" duration-ms="8312" started-at="2019-11-12T18:34:07 IST" finished-at="2019-11-12T18:34:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_product_details -->
-        <test-method status="PASS" signature="product_add()[pri:2, instance:product_details_script@70a9f84e]" name="product_add" duration-ms="23104" started-at="2019-10-30T15:31:15 IST" finished-at="2019-10-30T15:31:38 IST">
+        <test-method status="PASS" signature="product_add()[pri:2, instance:product_details_script@46238e3f]" name="product_add" duration-ms="4393" started-at="2019-11-12T18:34:15 IST" finished-at="2019-11-12T18:34:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- product_add -->
-        <test-method status="PASS" signature="product_options()[pri:3, instance:product_details_script@70a9f84e]" name="product_options" duration-ms="20391" started-at="2019-10-30T15:31:38 IST" finished-at="2019-10-30T15:31:58 IST">
+        <test-method status="PASS" signature="product_options()[pri:3, instance:product_details_script@46238e3f]" name="product_options" duration-ms="6457" started-at="2019-11-12T18:34:20 IST" finished-at="2019-11-12T18:34:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- product_options -->
-        <test-method status="PASS" signature="validate_qty()[pri:4, instance:product_details_script@70a9f84e]" name="validate_qty" duration-ms="2465" started-at="2019-10-30T15:31:58 IST" finished-at="2019-10-30T15:32:01 IST">
+        <test-method status="PASS" signature="validate_qty()[pri:4, instance:product_details_script@46238e3f]" name="validate_qty" duration-ms="2405" started-at="2019-11-12T18:34:26 IST" finished-at="2019-11-12T18:34:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_qty -->
-        <test-method status="PASS" signature="insert_qyt()[pri:5, instance:product_details_script@70a9f84e]" name="insert_qyt" duration-ms="4173" started-at="2019-10-30T15:32:01 IST" finished-at="2019-10-30T15:32:05 IST">
+        <test-method status="PASS" signature="insert_qyt()[pri:5, instance:product_details_script@46238e3f]" name="insert_qyt" duration-ms="4269" started-at="2019-11-12T18:34:28 IST" finished-at="2019-11-12T18:34:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- insert_qyt -->
-        <test-method status="PASS" signature="add_product()[pri:6, instance:product_details_script@70a9f84e]" name="add_product" duration-ms="6332" started-at="2019-10-30T15:32:05 IST" finished-at="2019-10-30T15:32:11 IST">
+        <test-method status="PASS" signature="add_product()[pri:6, instance:product_details_script@46238e3f]" name="add_product" duration-ms="6665" started-at="2019-11-12T18:34:33 IST" finished-at="2019-11-12T18:34:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- add_product -->
-        <test-method status="PASS" signature="wishList()[pri:7, instance:product_details_script@70a9f84e]" name="wishList" duration-ms="17320" started-at="2019-10-30T15:32:11 IST" finished-at="2019-10-30T15:32:29 IST">
+        <test-method status="PASS" signature="wishList()[pri:7, instance:product_details_script@46238e3f]" name="wishList" duration-ms="19520" started-at="2019-11-12T18:34:39 IST" finished-at="2019-11-12T18:34:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wishList -->
-        <test-method status="PASS" signature="tab_intend()[pri:8, instance:product_details_script@70a9f84e]" name="tab_intend" duration-ms="2270" started-at="2019-10-30T15:32:29 IST" finished-at="2019-10-30T15:32:31 IST">
+        <test-method status="PASS" signature="tab_intend()[pri:8, instance:product_details_script@46238e3f]" name="tab_intend" duration-ms="4462" started-at="2019-11-12T18:34:59 IST" finished-at="2019-11-12T18:35:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tab_intend -->
-        <test-method status="PASS" signature="review_blank()[pri:9, instance:product_details_script@70a9f84e]" name="review_blank" duration-ms="27822" started-at="2019-10-30T15:32:31 IST" finished-at="2019-10-30T15:32:59 IST">
+        <test-method status="PASS" signature="review_blank()[pri:9, instance:product_details_script@46238e3f]" name="review_blank" duration-ms="27802" started-at="2019-11-12T18:35:03 IST" finished-at="2019-11-12T18:35:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- review_blank -->
-        <test-method status="PASS" signature="review()[pri:10, instance:product_details_script@70a9f84e]" name="review" duration-ms="10087" started-at="2019-10-30T15:32:59 IST" finished-at="2019-10-30T15:33:09 IST">
+        <test-method status="PASS" signature="review()[pri:10, instance:product_details_script@46238e3f]" name="review" duration-ms="14680" started-at="2019-11-12T18:35:31 IST" finished-at="2019-11-12T18:35:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- review -->
-        <test-method status="PASS" signature="close()[pri:0, instance:product_details_script@70a9f84e]" name="close" is-config="true" duration-ms="879" started-at="2019-10-30T15:33:09 IST" finished-at="2019-10-30T15:33:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
       </class> <!-- product_details_script -->
       <class name="Login_script">
-        <test-method status="PASS" signature="Blank_data()[pri:1, instance:Login_script@3bd94634]" name="Blank_data" duration-ms="8283" started-at="2019-10-30T15:22:44 IST" description="test case with blank data" finished-at="2019-10-30T15:22:52 IST">
+        <test-method status="PASS" signature="Blank_data()[pri:1, instance:Login_script@33b37288]" name="Blank_data" duration-ms="4198" started-at="2019-11-12T18:29:27 IST" description="test case with blank data" finished-at="2019-11-12T18:29:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Blank_data -->
-        <test-method status="PASS" signature="valid_username_and_blank_password()[pri:2, instance:Login_script@3bd94634]" name="valid_username_and_blank_password" duration-ms="817" started-at="2019-10-30T15:22:52 IST" description="test case with valid username and blank password" finished-at="2019-10-30T15:22:53 IST">
+        <test-method status="PASS" signature="valid_username_and_blank_password()[pri:2, instance:Login_script@33b37288]" name="valid_username_and_blank_password" duration-ms="821" started-at="2019-11-12T18:29:31 IST" description="test case with valid username and blank password" finished-at="2019-11-12T18:29:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- valid_username_and_blank_password -->
-        <test-method status="PASS" signature="Invalid_username_and_blank_password()[pri:3, instance:Login_script@3bd94634]" name="Invalid_username_and_blank_password" duration-ms="524" started-at="2019-10-30T15:22:53 IST" description="test case with Invalid username and blank password" finished-at="2019-10-30T15:22:53 IST">
+        <test-method status="PASS" signature="Invalid_username_and_blank_password()[pri:3, instance:Login_script@33b37288]" name="Invalid_username_and_blank_password" duration-ms="565" started-at="2019-11-12T18:29:32 IST" description="test case with Invalid username and blank password" finished-at="2019-11-12T18:29:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Invalid_username_and_blank_password -->
-        <test-method status="PASS" signature="blank_username_and_valid_password()[pri:4, instance:Login_script@3bd94634]" name="blank_username_and_valid_password" duration-ms="898" started-at="2019-10-30T15:22:53 IST" description="test case with blank username and valid password" finished-at="2019-10-30T15:22:54 IST">
+        <test-method status="PASS" signature="blank_username_and_valid_password()[pri:4, instance:Login_script@33b37288]" name="blank_username_and_valid_password" duration-ms="865" started-at="2019-11-12T18:29:33 IST" description="test case with blank username and valid password" finished-at="2019-11-12T18:29:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blank_username_and_valid_password -->
-        <test-method status="PASS" signature="wrong_username_and_wrong_password()[pri:5, instance:Login_script@3bd94634]" name="wrong_username_and_wrong_password" duration-ms="7112" started-at="2019-10-30T15:22:54 IST" description="test case with Wrong username and wrong password" finished-at="2019-10-30T15:23:01 IST">
+        <test-method status="PASS" signature="wrong_username_and_wrong_password()[pri:5, instance:Login_script@33b37288]" name="wrong_username_and_wrong_password" duration-ms="6072" started-at="2019-11-12T18:29:33 IST" description="test case with Wrong username and wrong password" finished-at="2019-11-12T18:29:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wrong_username_and_wrong_password -->
-        <test-method status="PASS" signature="valid_username_and_wrong_password()[pri:6, instance:Login_script@3bd94634]" name="valid_username_and_wrong_password" duration-ms="8101" started-at="2019-10-30T15:23:01 IST" description="test case with Valid username and wrong password" finished-at="2019-10-30T15:23:10 IST">
+        <test-method status="PASS" signature="valid_username_and_wrong_password()[pri:6, instance:Login_script@33b37288]" name="valid_username_and_wrong_password" duration-ms="9558" started-at="2019-11-12T18:29:39 IST" description="test case with Valid username and wrong password" finished-at="2019-11-12T18:29:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- valid_username_and_wrong_password -->
-        <test-method status="PASS" signature="invalid_email_forget_password()[pri:7, instance:Login_script@3bd94634]" name="invalid_email_forget_password" duration-ms="20736" started-at="2019-10-30T15:23:10 IST" description="test case with invalid email at forget password page" finished-at="2019-10-30T15:23:30 IST">
+        <test-method status="PASS" signature="invalid_email_forget_password()[pri:7, instance:Login_script@33b37288]" name="invalid_email_forget_password" duration-ms="19276" started-at="2019-11-12T18:29:49 IST" description="test case with invalid email at forget password page" finished-at="2019-11-12T18:30:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalid_email_forget_password -->
-        <test-method status="PASS" signature="valid_username_and_valid_password()[pri:8, instance:Login_script@3bd94634]" name="valid_username_and_valid_password" duration-ms="8994" started-at="2019-10-30T15:23:30 IST" description="test case with valid username and valid password" finished-at="2019-10-30T15:23:39 IST">
+        <test-method status="PASS" signature="valid_username_and_valid_password()[pri:8, instance:Login_script@33b37288]" name="valid_username_and_valid_password" duration-ms="7972" started-at="2019-11-12T18:30:08 IST" description="test case with valid username and valid password" finished-at="2019-11-12T18:30:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- valid_username_and_valid_password -->

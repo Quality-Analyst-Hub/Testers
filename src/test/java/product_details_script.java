@@ -29,7 +29,7 @@ public class product_details_script extends repo_base {
 		int i=0;
 		while(i<list.size()) {
 			product_name = list.get(i).getText();
-			if(product_name.contains("tshirts for girls combo of 4")) {
+			if(product_name.contains("Girls Frilled Frock")) {
 				break;
 			}
 			i++;
@@ -190,10 +190,8 @@ public class product_details_script extends repo_base {
 		click_element(By.xpath("//button[@class='btn-global block-btn submit primary']"));
 		Thread.sleep(2000);
 		assertmultivalidate(ph.success_message, expectedmessage);
+		Thread.sleep(3000);
 	}
 	
-	@AfterSuite
-	public void close() {
-		driver.quit();
-	}
+	
 }

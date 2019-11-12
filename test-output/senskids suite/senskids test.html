@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>senskids test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>36/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>47/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 30 15:22:06 IST 2019</td>
+<td>Started on:</td><td>Tue Nov 12 18:28:37 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>662 seconds (662665 ms)</td>
+<tr><td>Total time:</td><td>613 seconds (613043 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,338 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='home_page_script.container()'><b>container</b><br>Test class: home_page_script<br>Test method: Home-page_script/Container</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-main&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.container(home_page_script.java:51)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace271422148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace271422148'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-main&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.container(home_page_script.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>home_page_script@77a57272</td></tr>
+<tr>
+<td title='home_page_script.head_menu()'><b>head_menu</b><br>Test class: home_page_script<br>Test method: Home-page_script/head_menu</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-menu&apos;)]/div[contains(@class,&apos;container&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.head_menu(home_page_script.java:71)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2037806977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2037806977'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-menu&apos;)]/div[contains(@class,&apos;container&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.head_menu(home_page_script.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>home_page_script@77a57272</td></tr>
+<tr>
+<td title='home_page_script.top_head()'><b>top_head</b><br>Test class: home_page_script<br>Test method: Home-page_script/top_head</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=..//..}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.top_head(home_page_script.java:28)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace538618049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace538618049'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=..//..}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.top_head(home_page_script.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>36</td>
+<td>home_page_script@77a57272</td></tr>
+<tr>
+<td title='home_page_script.validate_logo()'><b>validate_logo</b><br>Test class: home_page_script<br>Test method: Home-page_script/validate_logo</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-main&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.validate_logo(home_page_script.java:40)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1418102907", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1418102907'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-main&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.validate_logo(home_page_script.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>home_page_script@77a57272</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,183 +409,238 @@ function toggleAllBoxes() {
 <tr>
 <td title='Login_script.Blank_data()'><b>Blank_data</b><br>Test class: Login_script<br>Test method: test case with blank data</td>
 <td></td>
-<td>8</td>
-<td>Login_script@3bd94634</td></tr>
+<td>4</td>
+<td>Login_script@33b37288</td></tr>
 <tr>
 <td title='Login_script.Invalid_username_and_blank_password()'><b>Invalid_username_and_blank_password</b><br>Test class: Login_script<br>Test method: test case with Invalid username and blank password</td>
 <td></td>
 <td>0</td>
-<td>Login_script@3bd94634</td></tr>
+<td>Login_script@33b37288</td></tr>
 <tr>
 <td title='signup_script.Phone_no()'><b>Phone_no</b><br>Test class: signup_script<br>Test method: test case with blank data</td>
 <td></td>
 <td>1</td>
-<td>signup_script@f4168b8</td></tr>
+<td>signup_script@588df31b</td></tr>
 <tr>
 <td title='product_details_script.add_product()'><b>add_product</b><br>Test class: product_details_script</td>
 <td></td>
 <td>6</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>product_details_script@46238e3f</td></tr>
 <tr>
 <td title='Login_script.blank_username_and_valid_password()'><b>blank_username_and_valid_password</b><br>Test class: Login_script<br>Test method: test case with blank username and valid password</td>
 <td></td>
 <td>0</td>
-<td>Login_script@3bd94634</td></tr>
+<td>Login_script@33b37288</td></tr>
 <tr>
 <td title='signup_script.confirm_password()'><b>confirm_password</b><br>Test class: signup_script<br>Test method: test case for confirm password details.</td>
 <td></td>
 <td>1</td>
-<td>signup_script@f4168b8</td></tr>
+<td>signup_script@588df31b</td></tr>
 <tr>
-<td title='home_page_script.container()'><b>container</b><br>Test class: home_page_script<br>Test method: Home-page_script/Container</td>
+<td title='shopping_cart.delete_product()'><b>delete_product</b><br>Test class: shopping_cart</td>
 <td></td>
-<td>6</td>
-<td>home_page_script@58a90037</td></tr>
+<td>0</td>
+<td>shopping_cart@32464a14</td></tr>
+<tr>
+<td title='cart_mini_popup.delete_product_from_cart_popup()'><b>delete_product_from_cart_popup</b><br>Test class: cart_mini_popup</td>
+<td></td>
+<td>26</td>
+<td>cart_mini_popup@6e2c9341</td></tr>
+<tr>
+<td title='shopping_cart.discount_invalid()'><b>discount_invalid</b><br>Test class: shopping_cart</td>
+<td></td>
+<td>30</td>
+<td>shopping_cart@32464a14</td></tr>
+<tr>
+<td title='shopping_cart.discount_valid()'><b>discount_valid</b><br>Test class: shopping_cart</td>
+<td></td>
+<td>15</td>
+<td>shopping_cart@32464a14</td></tr>
 <tr>
 <td title='signup_script.fax_no()'><b>fax_no</b><br>Test class: signup_script<br>Test method: test case for Fax No details.</td>
 <td></td>
 <td>1</td>
-<td>signup_script@f4168b8</td></tr>
+<td>signup_script@588df31b</td></tr>
 <tr>
 <td title='home_page_script.footer()'><b>footer</b><br>Test class: home_page_script<br>Test method: Home-page_script/footer</td>
 <td></td>
-<td>117</td>
-<td>home_page_script@58a90037</td></tr>
-<tr>
-<td title='home_page_script.head_menu()'><b>head_menu</b><br>Test class: home_page_script<br>Test method: Home-page_script/head_menu</td>
-<td></td>
-<td>175</td>
-<td>home_page_script@58a90037</td></tr>
+<td>122</td>
+<td>home_page_script@77a57272</td></tr>
 <tr>
 <td title='product_details_script.insert_qyt()'><b>insert_qyt</b><br>Test class: product_details_script</td>
 <td></td>
 <td>4</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>product_details_script@46238e3f</td></tr>
 <tr>
 <td title='signup_script.invalid_email()'><b>invalid_email</b><br>Test class: signup_script<br>Test method: test case with invalid email details.</td>
 <td></td>
 <td>1</td>
-<td>signup_script@f4168b8</td></tr>
+<td>signup_script@588df31b</td></tr>
 <tr>
 <td title='Login_script.invalid_email_forget_password()'><b>invalid_email_forget_password</b><br>Test class: Login_script<br>Test method: test case with invalid email at forget password page</td>
 <td></td>
-<td>20</td>
-<td>Login_script@3bd94634</td></tr>
+<td>19</td>
+<td>Login_script@33b37288</td></tr>
 <tr>
 <td title='signup_script.invalid_password()'><b>invalid_password</b><br>Test class: signup_script<br>Test method: test case with invalid password details.</td>
 <td></td>
 <td>1</td>
-<td>signup_script@f4168b8</td></tr>
+<td>signup_script@588df31b</td></tr>
 <tr>
 <td title='home_page_script.newsletter()'><b>newsletter</b><br>Test class: home_page_script<br>Test method: Home-page_script/newsletter</td>
 <td></td>
-<td>27</td>
-<td>home_page_script@58a90037</td></tr>
+<td>26</td>
+<td>home_page_script@77a57272</td></tr>
 <tr>
 <td title='home_page_script.newsletter_with_already_registered_email()'><b>newsletter_with_already_registered_email</b><br>Test class: home_page_script<br>Test method: Home-page_script/newsletter_with_preregistered_email</td>
 <td></td>
 <td>7</td>
-<td>home_page_script@58a90037</td></tr>
+<td>home_page_script@77a57272</td></tr>
 <tr>
 <td title='home_page_script.newsletter_with_wrong_email()'><b>newsletter_with_wrong_email</b><br>Test class: home_page_script<br>Test method: Home-page_script/news_with_Wrong_data</td>
 <td></td>
-<td>0</td>
-<td>home_page_script@58a90037</td></tr>
+<td>1</td>
+<td>home_page_script@77a57272</td></tr>
+<tr>
+<td title='cart_mini_popup.open_empty_cart_popup()'><b>open_empty_cart_popup</b><br>Test class: cart_mini_popup</td>
+<td></td>
+<td>2</td>
+<td>cart_mini_popup@6e2c9341</td></tr>
 <tr>
 <td title='product_details_script.open_product_details()'><b>open_product_details</b><br>Test class: product_details_script</td>
 <td></td>
 <td>8</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>product_details_script@46238e3f</td></tr>
+<tr>
+<td title='shopping_cart.order_total()'><b>order_total</b><br>Test class: shopping_cart</td>
+<td></td>
+<td>6</td>
+<td>shopping_cart@32464a14</td></tr>
+<tr>
+<td title='cart_mini_popup.proceed_to_checkout()'><b>proceed_to_checkout</b><br>Test class: cart_mini_popup</td>
+<td></td>
+<td>21</td>
+<td>cart_mini_popup@6e2c9341</td></tr>
+<tr>
+<td title='shopping_cart.proceed_to_checkout()'><b>proceed_to_checkout</b><br>Test class: shopping_cart</td>
+<td></td>
+<td>20</td>
+<td>shopping_cart@32464a14</td></tr>
 <tr>
 <td title='product_details_script.product_add()'><b>product_add</b><br>Test class: product_details_script</td>
 <td></td>
-<td>23</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>4</td>
+<td>product_details_script@46238e3f</td></tr>
 <tr>
 <td title='product_details_script.product_options()'><b>product_options</b><br>Test class: product_details_script</td>
 <td></td>
-<td>20</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>6</td>
+<td>product_details_script@46238e3f</td></tr>
 <tr>
 <td title='signup_script.registered_email()'><b>registered_email</b><br>Test class: signup_script<br>Test method: test case for Already registered email id details.</td>
 <td></td>
-<td>11</td>
-<td>signup_script@f4168b8</td></tr>
+<td>10</td>
+<td>signup_script@588df31b</td></tr>
 <tr>
 <td title='product_details_script.review()'><b>review</b><br>Test class: product_details_script</td>
 <td></td>
-<td>10</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>14</td>
+<td>product_details_script@46238e3f</td></tr>
 <tr>
 <td title='product_details_script.review_blank()'><b>review_blank</b><br>Test class: product_details_script</td>
 <td></td>
 <td>27</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>product_details_script@46238e3f</td></tr>
 <tr>
 <td title='home_page_script.search_field()'><b>search_field</b><br>Test class: home_page_script<br>Test method: Home-page_script/search_field</td>
 <td></td>
 <td>19</td>
-<td>home_page_script@58a90037</td></tr>
+<td>home_page_script@77a57272</td></tr>
 <tr>
 <td title='product_listing_script.sort_data()'><b>sort_data</b><br>Test class: product_listing_script<br>Test method: test case for sort product list</td>
 <td></td>
-<td>14</td>
-<td>product_listing_script@74294adb</td></tr>
+<td>13</td>
+<td>product_listing_script@7181ae3f</td></tr>
 <tr>
 <td title='product_details_script.tab_intend()'><b>tab_intend</b><br>Test class: product_details_script</td>
 <td></td>
-<td>2</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>4</td>
+<td>product_details_script@46238e3f</td></tr>
 <tr>
-<td title='home_page_script.top_head()'><b>top_head</b><br>Test class: home_page_script<br>Test method: Home-page_script/top_head</td>
+<td title='shopping_cart.update_cart()'><b>update_cart</b><br>Test class: shopping_cart</td>
 <td></td>
-<td>79</td>
-<td>home_page_script@58a90037</td></tr>
+<td>15</td>
+<td>shopping_cart@32464a14</td></tr>
+<tr>
+<td title='cart_mini_popup.update_product_quantity_in_cart_popup()'><b>update_product_quantity_in_cart_popup</b><br>Test class: cart_mini_popup</td>
+<td></td>
+<td>9</td>
+<td>cart_mini_popup@6e2c9341</td></tr>
 <tr>
 <td title='signup_script.valid_data()'><b>valid_data</b><br>Test class: signup_script<br>Test method: test case for Valid data details.</td>
 <td></td>
-<td>17</td>
-<td>signup_script@f4168b8</td></tr>
+<td>30</td>
+<td>signup_script@588df31b</td></tr>
 <tr>
 <td title='Login_script.valid_username_and_blank_password()'><b>valid_username_and_blank_password</b><br>Test class: Login_script<br>Test method: test case with valid username and blank password</td>
 <td></td>
 <td>0</td>
-<td>Login_script@3bd94634</td></tr>
+<td>Login_script@33b37288</td></tr>
 <tr>
 <td title='Login_script.valid_username_and_valid_password()'><b>valid_username_and_valid_password</b><br>Test class: Login_script<br>Test method: test case with valid username and valid password</td>
 <td></td>
-<td>8</td>
-<td>Login_script@3bd94634</td></tr>
+<td>7</td>
+<td>Login_script@33b37288</td></tr>
 <tr>
 <td title='Login_script.valid_username_and_wrong_password()'><b>valid_username_and_wrong_password</b><br>Test class: Login_script<br>Test method: test case with Valid username and wrong password</td>
 <td></td>
-<td>8</td>
-<td>Login_script@3bd94634</td></tr>
+<td>9</td>
+<td>Login_script@33b37288</td></tr>
 <tr>
-<td title='home_page_script.validate_logo()'><b>validate_logo</b><br>Test class: home_page_script<br>Test method: Home-page_script/validate_logo</td>
+<td title='cart_mini_popup.validate_empty_cart_popup()'><b>validate_empty_cart_popup</b><br>Test class: cart_mini_popup</td>
 <td></td>
-<td>0</td>
-<td>home_page_script@58a90037</td></tr>
+<td>20</td>
+<td>cart_mini_popup@6e2c9341</td></tr>
+<tr>
+<td title='shopping_cart.validate_products()'><b>validate_products</b><br>Test class: shopping_cart</td>
+<td></td>
+<td>1</td>
+<td>shopping_cart@32464a14</td></tr>
+<tr>
+<td title='cart_mini_popup.validate_products_amount_in_cart_popup()'><b>validate_products_amount_in_cart_popup</b><br>Test class: cart_mini_popup</td>
+<td></td>
+<td>3</td>
+<td>cart_mini_popup@6e2c9341</td></tr>
+<tr>
+<td title='cart_mini_popup.validate_products_in_cart_popup()'><b>validate_products_in_cart_popup</b><br>Test class: cart_mini_popup</td>
+<td></td>
+<td>3</td>
+<td>cart_mini_popup@6e2c9341</td></tr>
 <tr>
 <td title='product_details_script.validate_qty()'><b>validate_qty</b><br>Test class: product_details_script</td>
 <td></td>
 <td>2</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>product_details_script@46238e3f</td></tr>
+<tr>
+<td title='cart_mini_popup.view_shopping_cart()'><b>view_shopping_cart</b><br>Test class: cart_mini_popup</td>
+<td></td>
+<td>8</td>
+<td>cart_mini_popup@6e2c9341</td></tr>
 <tr>
 <td title='product_details_script.wishList()'><b>wishList</b><br>Test class: product_details_script</td>
 <td></td>
-<td>17</td>
-<td>product_details_script@70a9f84e</td></tr>
+<td>19</td>
+<td>product_details_script@46238e3f</td></tr>
 <tr>
 <td title='signup_script.with_blank_fields()'><b>with_blank_fields</b><br>Test class: signup_script<br>Test method: test case with blank data</td>
 <td></td>
 <td>1</td>
-<td>signup_script@f4168b8</td></tr>
+<td>signup_script@588df31b</td></tr>
 <tr>
 <td title='Login_script.wrong_username_and_wrong_password()'><b>wrong_username_and_wrong_password</b><br>Test class: Login_script<br>Test method: test case with Wrong username and wrong password</td>
 <td></td>
-<td>7</td>
-<td>Login_script@3bd94634</td></tr>
+<td>6</td>
+<td>Login_script@33b37288</td></tr>
 </table><p>
 </body>
 </html>

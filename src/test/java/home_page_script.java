@@ -135,7 +135,7 @@ public class home_page_script extends repo_base {
 	@Test(priority = 7, description="Home-page_script/newsletter")
 	public void newsletter() throws Exception {
 		String[] expectedmessage = {"Thank you for your subscription."};
-		insertdata(ph.newsletter, "amitfu.l1@mailinator.com");
+		insertdata(ph.newsletter, "indrani@mailinator.com");
 		click_element(ph.newsletter_button);
 		assertmultivalidate(ph.success_message, expectedmessage);
 	}

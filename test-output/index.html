@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-senskids_suite">
-              <span class="suite-name border-passed">senskids suite</span>
+              <span class="suite-name border-failed">senskids suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">36 methods,   36 passed</span>
+                    <span class="method-stats">51 methods, 4 failed,   47 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-senskids_suite" class="hide-methods failed suite-senskids_suite"> (hide)</a> <!-- hide-methods failed suite-senskids_suite -->
+                      <a href="#" panel-name="suite-senskids_suite" class="show-methods failed suite-senskids_suite"> (show)</a> <!-- show-methods failed suite-senskids_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-senskids_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="container">container</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="head_menu">head_menu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="top_head">top_head</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="validate_logo">validate_logo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-senskids_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -132,7 +161,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="container">container</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="shopping_cart" hash-for-method="delete_product">delete_product</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="cart_mini_popup" hash-for-method="delete_product_from_cart_popup">delete_product_from_cart_popup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="shopping_cart" hash-for-method="discount_invalid">discount_invalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="shopping_cart" hash-for-method="discount_valid">discount_valid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,11 +187,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="footer">footer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="head_menu">head_menu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -187,7 +226,27 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="cart_mini_popup" hash-for-method="open_empty_cart_popup">open_empty_cart_popup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="product_details_script" hash-for-method="open_product_details">open_product_details</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="shopping_cart" hash-for-method="order_total">order_total</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="cart_mini_popup" hash-for-method="proceed_to_checkout">proceed_to_checkout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="shopping_cart" hash-for-method="proceed_to_checkout">proceed_to_checkout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -232,7 +291,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="top_head">top_head</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="shopping_cart" hash-for-method="update_cart">update_cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="cart_mini_popup" hash-for-method="update_product_quantity_in_cart_popup">update_product_quantity_in_cart_popup</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -257,12 +321,32 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="home_page_script" hash-for-method="validate_logo">validate_logo</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="cart_mini_popup" hash-for-method="validate_empty_cart_popup">validate_empty_cart_popup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="shopping_cart" hash-for-method="validate_products">validate_products</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="cart_mini_popup" hash-for-method="validate_products_amount_in_cart_popup">validate_products_amount_in_cart_popup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="cart_mini_popup" hash-for-method="validate_products_in_cart_popup">validate_products_in_cart_popup</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="product_details_script" hash-for-method="validate_qty">validate_qty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-senskids_suite" title="cart_mini_popup" hash-for-method="view_shopping_cart">view_shopping_cart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -292,6 +376,336 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-senskids_suite" class="panel senskids_suite">
+          <div class="suite-senskids_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">home_page_script</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="container">
+                  </a> <!-- container -->
+                  <span class="method-name">container</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-main&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.container(home_page_script.java:51)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Home-page_script/Container)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="head_menu">
+                  </a> <!-- head_menu -->
+                  <span class="method-name">head_menu</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-menu&apos;)]/div[contains(@class,&apos;container&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.head_menu(home_page_script.java:71)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Home-page_script/head_menu)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="top_head">
+                  </a> <!-- top_head -->
+                  <span class="method-name">top_head</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=..//..}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.top_head(home_page_script.java:28)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Home-page_script/top_head)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_logo">
+                  </a> <!-- validate_logo -->
+                  <span class="method-name">validate_logo</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GIPL-102&apos;, ip: &apos;192.168.10.162&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.97, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\KAPIL~1.SAH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:65233}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ac0f35f4dc1888238d5ca5bdda300501
+*** Element info: {Using=xpath, value=//div[contains(@class,&apos;header-main&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at home_page_script.validate_logo(home_page_script.java:40)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Home-page_script/validate_logo)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-senskids_suite-class-failed -->
+          <div class="suite-senskids_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">signup_script</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Phone_no">
+                  </a> <!-- Phone_no -->
+                  <span class="method-name">Phone_no</span>
+                  <em>
+(test case with blank data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="confirm_password">
+                  </a> <!-- confirm_password -->
+                  <span class="method-name">confirm_password</span>
+                  <em>
+(test case for confirm password details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fax_no">
+                  </a> <!-- fax_no -->
+                  <span class="method-name">fax_no</span>
+                  <em>
+(test case for Fax No details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalid_email">
+                  </a> <!-- invalid_email -->
+                  <span class="method-name">invalid_email</span>
+                  <em>
+(test case with invalid email details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalid_password">
+                  </a> <!-- invalid_password -->
+                  <span class="method-name">invalid_password</span>
+                  <em>
+(test case with invalid password details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registered_email">
+                  </a> <!-- registered_email -->
+                  <span class="method-name">registered_email</span>
+                  <em>
+(test case for Already registered email id details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_data">
+                  </a> <!-- valid_data -->
+                  <span class="method-name">valid_data</span>
+                  <em>
+(test case for Valid data details.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="with_blank_fields">
+                  </a> <!-- with_blank_fields -->
+                  <span class="method-name">with_blank_fields</span>
+                  <em>
+(test case with blank data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-senskids_suite-class-passed -->
+          <div class="suite-senskids_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">home_page_script</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="footer">
+                  </a> <!-- footer -->
+                  <span class="method-name">footer</span>
+                  <em>
+(Home-page_script/footer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newsletter">
+                  </a> <!-- newsletter -->
+                  <span class="method-name">newsletter</span>
+                  <em>
+(Home-page_script/newsletter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newsletter_with_already_registered_email">
+                  </a> <!-- newsletter_with_already_registered_email -->
+                  <span class="method-name">newsletter_with_already_registered_email</span>
+                  <em>
+(Home-page_script/newsletter_with_preregistered_email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newsletter_with_wrong_email">
+                  </a> <!-- newsletter_with_wrong_email -->
+                  <span class="method-name">newsletter_with_wrong_email</span>
+                  <em>
+(Home-page_script/news_with_Wrong_data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="search_field">
+                  </a> <!-- search_field -->
+                  <span class="method-name">search_field</span>
+                  <em>
+(Home-page_script/search_field)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-senskids_suite-class-passed -->
+          <div class="suite-senskids_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">shopping_cart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_product">
+                  </a> <!-- delete_product -->
+                  <span class="method-name">delete_product</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="discount_invalid">
+                  </a> <!-- discount_invalid -->
+                  <span class="method-name">discount_invalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="discount_valid">
+                  </a> <!-- discount_valid -->
+                  <span class="method-name">discount_valid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="order_total">
+                  </a> <!-- order_total -->
+                  <span class="method-name">order_total</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="proceed_to_checkout">
+                  </a> <!-- proceed_to_checkout -->
+                  <span class="method-name">proceed_to_checkout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="update_cart">
+                  </a> <!-- update_cart -->
+                  <span class="method-name">update_cart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_products">
+                  </a> <!-- validate_products -->
+                  <span class="method-name">validate_products</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-senskids_suite-class-passed -->
           <div class="suite-senskids_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -373,88 +787,80 @@
           <div class="suite-senskids_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">home_page_script</span>
+              <span class="class-name">cart_mini_popup</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="container">
-                  </a> <!-- container -->
-                  <span class="method-name">container</span>
-                  <em>
-(Home-page_script/Container)                  </em>
+                  <a name="delete_product_from_cart_popup">
+                  </a> <!-- delete_product_from_cart_popup -->
+                  <span class="method-name">delete_product_from_cart_popup</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="footer">
-                  </a> <!-- footer -->
-                  <span class="method-name">footer</span>
-                  <em>
-(Home-page_script/footer)                  </em>
+                  <a name="open_empty_cart_popup">
+                  </a> <!-- open_empty_cart_popup -->
+                  <span class="method-name">open_empty_cart_popup</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="head_menu">
-                  </a> <!-- head_menu -->
-                  <span class="method-name">head_menu</span>
-                  <em>
-(Home-page_script/head_menu)                  </em>
+                  <a name="proceed_to_checkout">
+                  </a> <!-- proceed_to_checkout -->
+                  <span class="method-name">proceed_to_checkout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="newsletter">
-                  </a> <!-- newsletter -->
-                  <span class="method-name">newsletter</span>
-                  <em>
-(Home-page_script/newsletter)                  </em>
+                  <a name="update_product_quantity_in_cart_popup">
+                  </a> <!-- update_product_quantity_in_cart_popup -->
+                  <span class="method-name">update_product_quantity_in_cart_popup</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="newsletter_with_already_registered_email">
-                  </a> <!-- newsletter_with_already_registered_email -->
-                  <span class="method-name">newsletter_with_already_registered_email</span>
-                  <em>
-(Home-page_script/newsletter_with_preregistered_email)                  </em>
+                  <a name="validate_empty_cart_popup">
+                  </a> <!-- validate_empty_cart_popup -->
+                  <span class="method-name">validate_empty_cart_popup</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="newsletter_with_wrong_email">
-                  </a> <!-- newsletter_with_wrong_email -->
-                  <span class="method-name">newsletter_with_wrong_email</span>
-                  <em>
-(Home-page_script/news_with_Wrong_data)                  </em>
+                  <a name="validate_products_amount_in_cart_popup">
+                  </a> <!-- validate_products_amount_in_cart_popup -->
+                  <span class="method-name">validate_products_amount_in_cart_popup</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="search_field">
-                  </a> <!-- search_field -->
-                  <span class="method-name">search_field</span>
-                  <em>
-(Home-page_script/search_field)                  </em>
+                  <a name="validate_products_in_cart_popup">
+                  </a> <!-- validate_products_in_cart_popup -->
+                  <span class="method-name">validate_products_in_cart_popup</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="top_head">
-                  </a> <!-- top_head -->
-                  <span class="method-name">top_head</span>
-                  <em>
-(Home-page_script/top_head)                  </em>
+                  <a name="view_shopping_cart">
+                  </a> <!-- view_shopping_cart -->
+                  <span class="method-name">view_shopping_cart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-senskids_suite-class-passed -->
+          <div class="suite-senskids_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">product_listing_script</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validate_logo">
-                  </a> <!-- validate_logo -->
-                  <span class="method-name">validate_logo</span>
+                  <a name="sort_data">
+                  </a> <!-- sort_data -->
+                  <span class="method-name">sort_data</span>
                   <em>
-(Home-page_script/validate_logo)                  </em>
+(test case for sort product list)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -539,103 +945,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-senskids_suite-class-passed -->
-          <div class="suite-senskids_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">signup_script</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Phone_no">
-                  </a> <!-- Phone_no -->
-                  <span class="method-name">Phone_no</span>
-                  <em>
-(test case with blank data)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="confirm_password">
-                  </a> <!-- confirm_password -->
-                  <span class="method-name">confirm_password</span>
-                  <em>
-(test case for confirm password details.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="fax_no">
-                  </a> <!-- fax_no -->
-                  <span class="method-name">fax_no</span>
-                  <em>
-(test case for Fax No details.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalid_email">
-                  </a> <!-- invalid_email -->
-                  <span class="method-name">invalid_email</span>
-                  <em>
-(test case with invalid email details.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalid_password">
-                  </a> <!-- invalid_password -->
-                  <span class="method-name">invalid_password</span>
-                  <em>
-(test case with invalid password details.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="registered_email">
-                  </a> <!-- registered_email -->
-                  <span class="method-name">registered_email</span>
-                  <em>
-(test case for Already registered email id details.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="valid_data">
-                  </a> <!-- valid_data -->
-                  <span class="method-name">valid_data</span>
-                  <em>
-(test case for Valid data details.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="with_blank_fields">
-                  </a> <!-- with_blank_fields -->
-                  <span class="method-name">with_blank_fields</span>
-                  <em>
-(test case with blank data)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-senskids_suite-class-passed -->
-          <div class="suite-senskids_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">product_listing_script</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="sort_data">
-                  </a> <!-- sort_data -->
-                  <span class="method-name">sort_data</span>
-                  <em>
-(test case for sort product list)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-senskids_suite-class-passed -->
         </div> <!-- panel senskids_suite -->
         <div panel-name="test-xml-senskids_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -653,6 +962,8 @@
       &lt;class name=&quot;home_page_script&quot;/&gt;
       &lt;class name=&quot;product_listing_script&quot;/&gt;
       &lt;class name=&quot;product_details_script&quot;/&gt;
+      &lt;class name=&quot;cart_mini_popup&quot;/&gt;
+      &lt;class name=&quot;shopping_cart&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- senskids test --&gt;
 &lt;/suite&gt; &lt;!-- senskids suite --&gt;
@@ -666,7 +977,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">senskids test (5 classes)</span>
+                <span class="test-name">senskids test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -692,156 +1003,216 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(36);
+data.addRows(51);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'head_menu')
+data.setCell(0, 1, 'footer')
 data.setCell(0, 2, 'home_page_script')
-data.setCell(0, 3, 175072);
+data.setCell(0, 3, 122578);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'footer')
+data.setCell(1, 1, 'top_head')
 data.setCell(1, 2, 'home_page_script')
-data.setCell(1, 3, 117316);
+data.setCell(1, 3, 36729);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'top_head')
-data.setCell(2, 2, 'home_page_script')
-data.setCell(2, 3, 79678);
+data.setCell(2, 1, 'discount_invalid')
+data.setCell(2, 2, 'shopping_cart')
+data.setCell(2, 3, 30845);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'newsletter')
-data.setCell(3, 2, 'home_page_script')
-data.setCell(3, 3, 27872);
+data.setCell(3, 1, 'valid_data')
+data.setCell(3, 2, 'signup_script')
+data.setCell(3, 3, 30739);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'review_blank')
 data.setCell(4, 2, 'product_details_script')
-data.setCell(4, 3, 27822);
+data.setCell(4, 3, 27802);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'product_add')
-data.setCell(5, 2, 'product_details_script')
-data.setCell(5, 3, 23104);
+data.setCell(5, 1, 'newsletter')
+data.setCell(5, 2, 'home_page_script')
+data.setCell(5, 3, 26537);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'invalid_email_forget_password')
-data.setCell(6, 2, 'Login_script')
-data.setCell(6, 3, 20736);
+data.setCell(6, 1, 'delete_product_from_cart_popup')
+data.setCell(6, 2, 'cart_mini_popup')
+data.setCell(6, 3, 26368);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'product_options')
-data.setCell(7, 2, 'product_details_script')
-data.setCell(7, 3, 20391);
+data.setCell(7, 1, 'proceed_to_checkout')
+data.setCell(7, 2, 'cart_mini_popup')
+data.setCell(7, 3, 21288);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'search_field')
-data.setCell(8, 2, 'home_page_script')
-data.setCell(8, 3, 19032);
+data.setCell(8, 1, 'proceed_to_checkout')
+data.setCell(8, 2, 'shopping_cart')
+data.setCell(8, 3, 20306);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'wishList')
-data.setCell(9, 2, 'product_details_script')
-data.setCell(9, 3, 17320);
+data.setCell(9, 1, 'validate_empty_cart_popup')
+data.setCell(9, 2, 'cart_mini_popup')
+data.setCell(9, 3, 20056);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'valid_data')
-data.setCell(10, 2, 'signup_script')
-data.setCell(10, 3, 17238);
+data.setCell(10, 1, 'wishList')
+data.setCell(10, 2, 'product_details_script')
+data.setCell(10, 3, 19520);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'sort_data')
-data.setCell(11, 2, 'product_listing_script')
-data.setCell(11, 3, 14140);
+data.setCell(11, 1, 'search_field')
+data.setCell(11, 2, 'home_page_script')
+data.setCell(11, 3, 19449);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'registered_email')
-data.setCell(12, 2, 'signup_script')
-data.setCell(12, 3, 11371);
+data.setCell(12, 1, 'invalid_email_forget_password')
+data.setCell(12, 2, 'Login_script')
+data.setCell(12, 3, 19276);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'review')
-data.setCell(13, 2, 'product_details_script')
-data.setCell(13, 3, 10087);
+data.setCell(13, 1, 'discount_valid')
+data.setCell(13, 2, 'shopping_cart')
+data.setCell(13, 3, 15178);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'valid_username_and_valid_password')
-data.setCell(14, 2, 'Login_script')
-data.setCell(14, 3, 8994);
+data.setCell(14, 1, 'update_cart')
+data.setCell(14, 2, 'shopping_cart')
+data.setCell(14, 3, 15059);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'Blank_data')
-data.setCell(15, 2, 'Login_script')
-data.setCell(15, 3, 8283);
+data.setCell(15, 1, 'review')
+data.setCell(15, 2, 'product_details_script')
+data.setCell(15, 3, 14680);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'open_product_details')
-data.setCell(16, 2, 'product_details_script')
-data.setCell(16, 3, 8111);
+data.setCell(16, 1, 'sort_data')
+data.setCell(16, 2, 'product_listing_script')
+data.setCell(16, 3, 13679);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'valid_username_and_wrong_password')
-data.setCell(17, 2, 'Login_script')
-data.setCell(17, 3, 8101);
+data.setCell(17, 1, 'registered_email')
+data.setCell(17, 2, 'signup_script')
+data.setCell(17, 3, 10824);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'newsletter_with_already_registered_email')
-data.setCell(18, 2, 'home_page_script')
-data.setCell(18, 3, 7275);
+data.setCell(18, 1, 'valid_username_and_wrong_password')
+data.setCell(18, 2, 'Login_script')
+data.setCell(18, 3, 9558);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'wrong_username_and_wrong_password')
-data.setCell(19, 2, 'Login_script')
-data.setCell(19, 3, 7112);
+data.setCell(19, 1, 'update_product_quantity_in_cart_popup')
+data.setCell(19, 2, 'cart_mini_popup')
+data.setCell(19, 3, 9213);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'add_product')
-data.setCell(20, 2, 'product_details_script')
-data.setCell(20, 3, 6332);
+data.setCell(20, 1, 'view_shopping_cart')
+data.setCell(20, 2, 'cart_mini_popup')
+data.setCell(20, 3, 8459);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'container')
-data.setCell(21, 2, 'home_page_script')
-data.setCell(21, 3, 6211);
+data.setCell(21, 1, 'open_product_details')
+data.setCell(21, 2, 'product_details_script')
+data.setCell(21, 3, 8312);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'insert_qyt')
-data.setCell(22, 2, 'product_details_script')
-data.setCell(22, 3, 4173);
+data.setCell(22, 1, 'valid_username_and_valid_password')
+data.setCell(22, 2, 'Login_script')
+data.setCell(22, 3, 7972);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'validate_qty')
-data.setCell(23, 2, 'product_details_script')
-data.setCell(23, 3, 2465);
+data.setCell(23, 1, 'newsletter_with_already_registered_email')
+data.setCell(23, 2, 'home_page_script')
+data.setCell(23, 3, 7253);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'tab_intend')
+data.setCell(24, 1, 'add_product')
 data.setCell(24, 2, 'product_details_script')
-data.setCell(24, 3, 2270);
+data.setCell(24, 3, 6665);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'with_blank_fields')
-data.setCell(25, 2, 'signup_script')
-data.setCell(25, 3, 1960);
+data.setCell(25, 1, 'order_total')
+data.setCell(25, 2, 'shopping_cart')
+data.setCell(25, 3, 6544);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'confirm_password')
-data.setCell(26, 2, 'signup_script')
-data.setCell(26, 3, 1746);
+data.setCell(26, 1, 'product_options')
+data.setCell(26, 2, 'product_details_script')
+data.setCell(26, 3, 6457);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'invalid_password')
-data.setCell(27, 2, 'signup_script')
-data.setCell(27, 3, 1341);
+data.setCell(27, 1, 'wrong_username_and_wrong_password')
+data.setCell(27, 2, 'Login_script')
+data.setCell(27, 3, 6072);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'Phone_no')
-data.setCell(28, 2, 'signup_script')
-data.setCell(28, 3, 1296);
+data.setCell(28, 1, 'tab_intend')
+data.setCell(28, 2, 'product_details_script')
+data.setCell(28, 3, 4462);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'invalid_email')
-data.setCell(29, 2, 'signup_script')
-data.setCell(29, 3, 1252);
+data.setCell(29, 1, 'product_add')
+data.setCell(29, 2, 'product_details_script')
+data.setCell(29, 3, 4393);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'fax_no')
-data.setCell(30, 2, 'signup_script')
-data.setCell(30, 3, 1156);
+data.setCell(30, 1, 'insert_qyt')
+data.setCell(30, 2, 'product_details_script')
+data.setCell(30, 3, 4269);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'blank_username_and_valid_password')
+data.setCell(31, 1, 'Blank_data')
 data.setCell(31, 2, 'Login_script')
-data.setCell(31, 3, 898);
+data.setCell(31, 3, 4198);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'valid_username_and_blank_password')
-data.setCell(32, 2, 'Login_script')
-data.setCell(32, 3, 817);
+data.setCell(32, 1, 'validate_products_amount_in_cart_popup')
+data.setCell(32, 2, 'cart_mini_popup')
+data.setCell(32, 3, 3454);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'newsletter_with_wrong_email')
-data.setCell(33, 2, 'home_page_script')
-data.setCell(33, 3, 800);
+data.setCell(33, 1, 'validate_products_in_cart_popup')
+data.setCell(33, 2, 'cart_mini_popup')
+data.setCell(33, 3, 3156);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'Invalid_username_and_blank_password')
-data.setCell(34, 2, 'Login_script')
-data.setCell(34, 3, 524);
+data.setCell(34, 1, 'head_menu')
+data.setCell(34, 2, 'home_page_script')
+data.setCell(34, 3, 3073);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'validate_logo')
-data.setCell(35, 2, 'home_page_script')
-data.setCell(35, 3, 173);
+data.setCell(35, 1, 'validate_qty')
+data.setCell(35, 2, 'product_details_script')
+data.setCell(35, 3, 2405);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'open_empty_cart_popup')
+data.setCell(36, 2, 'cart_mini_popup')
+data.setCell(36, 3, 2300);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'with_blank_fields')
+data.setCell(37, 2, 'signup_script')
+data.setCell(37, 3, 1802);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'confirm_password')
+data.setCell(38, 2, 'signup_script')
+data.setCell(38, 3, 1737);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'invalid_email')
+data.setCell(39, 2, 'signup_script')
+data.setCell(39, 3, 1364);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'invalid_password')
+data.setCell(40, 2, 'signup_script')
+data.setCell(40, 3, 1312);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'Phone_no')
+data.setCell(41, 2, 'signup_script')
+data.setCell(41, 3, 1282);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'validate_products')
+data.setCell(42, 2, 'shopping_cart')
+data.setCell(42, 3, 1280);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'fax_no')
+data.setCell(43, 2, 'signup_script')
+data.setCell(43, 3, 1253);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'newsletter_with_wrong_email')
+data.setCell(44, 2, 'home_page_script')
+data.setCell(44, 3, 1012);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'blank_username_and_valid_password')
+data.setCell(45, 2, 'Login_script')
+data.setCell(45, 3, 865);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'valid_username_and_blank_password')
+data.setCell(46, 2, 'Login_script')
+data.setCell(46, 3, 821);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'Invalid_username_and_blank_password')
+data.setCell(47, 2, 'Login_script')
+data.setCell(47, 3, 565);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'delete_product')
+data.setCell(48, 2, 'shopping_cart')
+data.setCell(48, 3, 251);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'validate_logo')
+data.setCell(49, 2, 'home_page_script')
+data.setCell(49, 3, 111);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'container')
+data.setCell(50, 2, 'home_page_script')
+data.setCell(50, 3, 56);
 window.suiteTableData['senskids_suite']= { tableData: data, tableDiv: 'times-div-senskids_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
               <div id="times-div-senskids_suite">
               </div> <!-- times-div-senskids_suite -->
             </div> <!-- times-div -->
@@ -874,163 +1245,237 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">with_blank_fields</span>
-                <span class="method-start">30482 ms</span>
+                <span class="method-start">27324 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Phone_no</span>
-                <span class="method-start">32451 ms</span>
+                <span class="method-start">29136 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">invalid_email</span>
-                <span class="method-start">33749 ms</span>
+                <span class="method-start">30421 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">invalid_password</span>
-                <span class="method-start">35002 ms</span>
+                <span class="method-start">31788 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">confirm_password</span>
-                <span class="method-start">36344 ms</span>
+                <span class="method-start">33102 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fax_no</span>
-                <span class="method-start">38093 ms</span>
+                <span class="method-start">34841 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">registered_email</span>
-                <span class="method-start">39251 ms</span>
+                <span class="method-start">36096 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">valid_data</span>
-                <span class="method-start">50626 ms</span>
+                <span class="method-start">46923 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Login_script</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Blank_data</span>
-                <span class="method-start">67868 ms</span>
+                <span class="method-start">77665 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">valid_username_and_blank_password</span>
-                <span class="method-start">76160 ms</span>
+                <span class="method-start">81865 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Invalid_username_and_blank_password</span>
-                <span class="method-start">76978 ms</span>
+                <span class="method-start">82688 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">blank_username_and_valid_password</span>
-                <span class="method-start">77505 ms</span>
+                <span class="method-start">83255 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">wrong_username_and_wrong_password</span>
-                <span class="method-start">78405 ms</span>
+                <span class="method-start">84122 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">valid_username_and_wrong_password</span>
-                <span class="method-start">85519 ms</span>
+                <span class="method-start">90196 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">invalid_email_forget_password</span>
-                <span class="method-start">93626 ms</span>
+                <span class="method-start">99755 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">valid_username_and_valid_password</span>
-                <span class="method-start">114377 ms</span>
+                <span class="method-start">119033 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">home_page_script</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">top_head</span>
-                <span class="method-start">123373 ms</span>
+                <span class="method-start">127006 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validate_logo</span>
-                <span class="method-start">203053 ms</span>
+                <span class="method-start">163755 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">container</span>
-                <span class="method-start">203227 ms</span>
+                <span class="method-start">163869 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">head_menu</span>
-                <span class="method-start">209440 ms</span>
+                <span class="method-start">163927 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">footer</span>
-                <span class="method-start">384514 ms</span>
+                <span class="method-start">167003 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">newsletter_with_wrong_email</span>
-                <span class="method-start">501833 ms</span>
+                <span class="method-start">289582 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">newsletter</span>
-                <span class="method-start">502635 ms</span>
+                <span class="method-start">290596 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">newsletter_with_already_registered_email</span>
-                <span class="method-start">530509 ms</span>
+                <span class="method-start">317134 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">search_field</span>
-                <span class="method-start">537786 ms</span>
+                <span class="method-start">324389 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">product_listing_script</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">sort_data</span>
-                <span class="method-start">556822 ms</span>
+                <span class="method-start">343841 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">product_details_script</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">open_product_details</span>
-                <span class="method-start">570963 ms</span>
+                <span class="method-start">357523 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">product_add</span>
-                <span class="method-start">579079 ms</span>
+                <span class="method-start">365844 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">product_options</span>
-                <span class="method-start">602185 ms</span>
+                <span class="method-start">370239 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_qty</span>
-                <span class="method-start">622578 ms</span>
+                <span class="method-start">376697 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">insert_qyt</span>
-                <span class="method-start">625051 ms</span>
+                <span class="method-start">379105 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">add_product</span>
-                <span class="method-start">629226 ms</span>
+                <span class="method-start">383375 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">wishList</span>
-                <span class="method-start">635560 ms</span>
+                <span class="method-start">390041 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">tab_intend</span>
-                <span class="method-start">652883 ms</span>
+                <span class="method-start">409562 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">review_blank</span>
-                <span class="method-start">655155 ms</span>
+                <span class="method-start">414025 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">review</span>
-                <span class="method-start">682978 ms</span>
+                <span class="method-start">441828 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">cart_mini_popup</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">open_empty_cart_popup</span>
+                <span class="method-start">456509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_empty_cart_popup</span>
+                <span class="method-start">458810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_products_in_cart_popup</span>
+                <span class="method-start">478867 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validate_products_amount_in_cart_popup</span>
+                <span class="method-start">482025 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">update_product_quantity_in_cart_popup</span>
+                <span class="method-start">485482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">delete_product_from_cart_popup</span>
+                <span class="method-start">494697 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">proceed_to_checkout</span>
+                <span class="method-start">521066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">view_shopping_cart</span>
+                <span class="method-start">542355 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">shopping_cart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validate_products</span>
+                <span class="method-start">550816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">discount_invalid</span>
+                <span class="method-start">552098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">discount_valid</span>
+                <span class="method-start">582947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">update_cart</span>
+                <span class="method-start">598127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">delete_product</span>
+                <span class="method-start">613188 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">order_total</span>
+                <span class="method-start">613440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">proceed_to_checkout</span>
+                <span class="method-start">619986 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">693166 ms</span>
+                <span class="method-start">641057 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
